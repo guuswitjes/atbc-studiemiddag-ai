@@ -1,0 +1,262 @@
+/* =============================================================
+   HAN University of Applied Sciences — Colors & Typography
+   Source: Vormgeving/Kleuren/Kleuren.md, Vormgeving/Lettertypen/Lettertype.md
+   ============================================================= */
+
+/* ----------  FONT FACES  ----------
+   Primary brand face is Avenir Next / Avenir Next Condensed.
+   That face is licensed and not redistributable. For web/email/Office,
+   HAN officially substitutes ROBOTO + ROBOTO CONDENSED — those files
+   are bundled in /fonts.
+
+   ⚠️ If you have access to Avenir Next, swap it in here as the first
+   stack value of --font-display / --font-sans.
+*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-VariableFont.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./fonts/RobotoCondensed-VariableFont.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------  TOKENS  ---------- */
+:root {
+  /* ---------- Color: Primary palette ---------- */
+  --han-rood: #e50056;          /* HAN ROOD — primary brand colour */
+  --han-zwart: #000000;         /* HAN ZWART */
+  --han-wit: #ffffff;           /* HAN WIT */
+
+  /* ---------- Color: Greyscale ---------- */
+  --han-alabaster: #f8f8f8;
+  --han-mercury:   #e3e3e3;
+  --han-gray:      #919191;
+  --han-boulder:   #757575;
+  --han-mineshaft: #454545;
+
+  /* ---------- Color: Secondary (use sparingly) ---------- */
+  --han-oranje: #f5a846;
+  --han-groen:  #7ac48e;
+  --han-blauw:  #6ac3ed;
+
+  /* ---------- Color: Tertiary (charts/illustrations only) ---------- */
+  --han-olijf:  #bbd737;
+  --han-geel:   #f8e260;
+  --han-koraal: #eb5241;
+  --han-violet: #b14196;
+  --han-navy:   #325ca7;
+
+  /* ---------- Color: HAN Rood tints (charts only) ---------- */
+  --han-rood-90: #e8195f;
+  --han-rood-75: #ec4080;
+  --han-rood-60: #f0669b;
+  --han-rood-45: #f48cb7;
+  --han-rood-30: #f8b3d2;
+  --han-rood-15: #fcd9e9;
+
+  /* ---------- Semantic foreground / background ---------- */
+  --bg:        var(--han-wit);
+  --bg-alt:    var(--han-alabaster);
+  --bg-rule:   var(--han-mercury);
+  --bg-invert: var(--han-zwart);
+
+  --fg:        var(--han-zwart);
+  --fg-muted:  var(--han-mineshaft);
+  --fg-subtle: var(--han-boulder);
+  --fg-faint:  var(--han-gray);
+  --fg-on-dark:    var(--han-wit);
+  --fg-on-rood:    var(--han-wit);
+
+  --accent:        var(--han-rood);
+  --accent-hover:  #c70049;     /* slightly darker for hover */
+  --accent-press:  #a8003e;     /* press */
+  --link:          var(--han-rood);
+
+  /* ---------- Type families ---------- */
+  /* Primary brand stack falls back from Avenir Next → Roboto. */
+  --font-display: "Avenir Next Condensed", "Roboto Condensed", "Roboto", system-ui, sans-serif;
+  --font-sans:    "Avenir Next", "Roboto", system-ui, sans-serif;
+  --font-body:    var(--font-sans);
+
+  /* ---------- Type scale ----------
+     Mirrors the print spec but rebased so they read on-screen.
+     Keep TITLES, CAPS, and condensed faces locked to --font-display.
+  */
+  --fs-display:   72px;   /* hero "OPEN UP NEW HORIZONS" */
+  --fs-h1:        48px;   /* page H1 / Titel */
+  --fs-h2:        32px;   /* Tussenkop large */
+  --fs-h3:        24px;   /* Tussenkop small */
+  --fs-h4:        18px;   /* Paragraafkop / Kopregel */
+  --fs-body:      16px;   /* Broodtekst on web */
+  --fs-intro:     20px;   /* lead paragraph */
+  --fs-small:     14px;
+  --fs-micro:     12px;
+  --fs-quote:     28px;
+
+  --lh-tight: 1.0;
+  --lh-snug:  1.15;
+  --lh-base:  1.5;
+  --lh-loose: 1.6;
+
+  /* ---------- Tracking ----------
+     HAN headlines are condensed, all-caps, tightly tracked; body is normal.
+  */
+  --tr-display: -0.01em;
+  --tr-caps:    0.01em;
+  --tr-body:    0;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---------- Radii ----------
+     HAN reads as flat / hard-edged. Keep radii minimal.
+     Buttons + cards use crisp 2–4px; pills exist only for tags.
+  */
+  --radius-0: 0px;
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-pill: 999px;
+
+  /* ---------- Borders ---------- */
+  --border-hair: 1px solid var(--han-mercury);
+  --border-base: 1px solid var(--han-gray);
+  --border-bold: 2px solid var(--han-zwart);
+  --border-rood: 2px solid var(--han-rood);
+
+  /* ---------- Shadows (used sparingly — HAN is mostly flat) ---------- */
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-3: 0 12px 32px rgba(0,0,0,0.12);
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+
+  /* ---------- HAN underscore stripe (signature graphic device) ----------
+     The "_" in the wordmark is also used as a slanted stripe across imagery.
+     The actual underscore in the wordmark has a 6:1 length-to-thickness ratio.
+     Keep stripes at width:height of roughly 6:1, anywhere from 5:1–6.5:1.
+  */
+  --stripe-rotation: -12deg;
+  --stripe-ratio: 6;            /* width / height */
+}
+
+/* ----------  SEMANTIC ELEMENT STYLES  ---------- */
+
+html, body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.han-display, .display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-display);
+  text-transform: uppercase;
+  color: var(--fg);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-display);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-4);
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-caps);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-3);
+}
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-caps);
+  margin: 0 0 var(--space-2);
+}
+h4, .h4, .eyebrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h4);
+  line-height: var(--lh-snug);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--han-rood);
+  margin: 0 0 var(--space-2);
+}
+.intro, .lead {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-intro);
+  line-height: var(--lh-loose);
+  color: var(--fg-muted);
+}
+p {
+  margin: 0 0 var(--space-3);
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+small, .small { font-size: var(--fs-small); }
+.micro { font-size: var(--fs-micro); }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color var(--dur-fast) var(--ease);
+}
+a:hover { color: var(--accent-hover); }
+a:active { color: var(--accent-press); }
+
+blockquote, .quote {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-quote);
+  line-height: var(--lh-snug);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-caps);
+  color: var(--fg);
+  border-left: var(--border-rood);
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+code, pre, kbd, samp {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.95em;
+}

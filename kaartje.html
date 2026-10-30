@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mijn volgende stap · Studiemiddag AI Chemie</title>
+<link rel="stylesheet" href="assets/han-tokens.css">
+<link rel="stylesheet" href="assets/reader.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="naam" href="index.html">Studiemiddag AI <span>·</span> Chemie</a>
+    <nav aria-label="Terug"><a href="index.html">Terug naar de reader</a></nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="stripe" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Kaartje</p>
+    <h1>Mijn volgende stap</h1>
+    <p>Wat maak je af, met welke collega, en wanneer? Een datum, niet "binnenkort".</p>
+  </div>
+</div>
+
+<main>
+<section class="blok">
+  <div class="wrap">
+    <form id="kaartje" onsubmit="return false">
+      <div class="veld">
+        <label for="werk">Wat maak ik af?</label>
+        <textarea id="werk" placeholder="Bijvoorbeeld: mijn hulp voor feedback op labverslagen"></textarea>
+      </div>
+      <div class="veld">
+        <label for="collega">Met welke collega?</label>
+        <input id="collega" type="text" placeholder="Naam van je collega">
+      </div>
+      <div class="veld">
+        <label for="datum">Wanneer?</label>
+        <input id="datum" type="date">
+      </div>
+      <div class="knoppen">
+        <button type="button" class="knop" id="kopieer">Kopieer</button>
+        <button type="button" class="knop licht" id="agenda">Zet in mijn agenda</button>
+      </div>
+      <p class="melding" id="melding" role="status"></p>
+    </form>
+    <p class="lead" style="margin-top:32px">Je kaartje blijft alleen in deze browser staan. Er gaat niets naar een server. Kopieer het naar je mail of zet het in je agenda, dan raak je het niet kwijt.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Studiemiddag AI voor het docententeam Chemie (ATBC), HAN, 4 november 2026.</p>
+    <p>Vragen: <a href="mailto:guus.witjes@han.nl">guus.witjes@han.nl</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var velden = ['werk', 'collega', 'datum'];
+  var sleutel = 'atbc-kaartje';
+  var melding = document.getElementById('melding');
+
+  // Bewaren in de eigen browser; werkt ook als opslag geblokkeerd is
+  try {
+    var bewaard = JSON.parse(localStorage.getItem(sleutel) || '{}');
+    velden.forEach(function (v) { if (bewaard[v]) document.getElementById(v).value = bewaard[v]; });
+  } catch (e) {}
+  velden.forEach(function (v) {
+    document.getElementById(v).addEventListener('input', function () {
+      try {
+        var data = {};
+        velden.forEach(function (w) { data[w] = document.getElementById(w).value; });
+        localStorage.setItem(sleutel, JSON.stringify(data));
+      } catch (e) {}
+    });
+  });
+
+  function waarde(v) { return document.getElementById(v).value.trim(); }
+  function datumTekst() {
+    var d = waarde('datum');
+    if (!d) return '';
+    var p = d.split('-');
+    var maanden = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+    return parseInt(p[2], 10) + ' ' + maanden[parseInt(p[1], 10) - 1] + ' ' + p[0];
+  }
+  function tekst() {
+    return 'Mijn volgende stap (studiemiddag AI Chemie)\n' +
+      'Wat maak ik af: ' + waarde('werk') + '\n' +
+      'Met wie: ' + waarde('collega') + '\n' +
+      'Wanneer: ' + datumTekst();
+  }
+  function zeg(t) { melding.textContent = t; setTimeout(function () { melding.textContent = ''; }, 2500); }
+
+  document.getElementById('kopieer').addEventListener('click', function () {
+    var t = tekst();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(t).then(function () { zeg('Gekopieerd'); }, function () { oud(t); });
+    } else { oud(t); }
+  });
+  function oud(t) {
+    var ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta);
+    ta.select(); try { document.execCommand('copy'); zeg('Gekopieerd'); } catch (e) { zeg('Kopiëren lukt niet, selecteer de tekst zelf'); }
+    document.body.removeChild(ta);
+  }
+
+  document.getElementById('agenda').addEventListener('click', function () {
+    var d = waarde('datum');
+    if (!d) { zeg('Kies eerst een datum'); document.getElementById('datum').focus(); return; }
+    var dag = d.replace(/-/g, '');
+    var p = d.split('-');
+    var volgende = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2] + 1));
+    var eind = volgende.toISOString().slice(0, 10).replace(/-/g, '');
+    function esc(s) { return s.replace(/\\/g, '\\\\').replace(/,/g, '\\,').replace(/;/g, '\\;').replace(/\n/g, '\\n'); }
+    var titel = 'Afmaken: ' + (waarde('werk') || 'mijn AI-hulp') + (waarde('collega') ? ' (met ' + waarde('collega') + ')' : '');
+    var ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//studiemiddag-ai-chemie//kaartje//NL',
+      'BEGIN:VEVENT',
+      'UID:' + Date.now() + '@atbc-studiemiddag-ai',
+      'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z',
+      'DTSTART;VALUE=DATE:' + dag,
+      'DTEND;VALUE=DATE:' + eind,
+      'SUMMARY:' + esc(titel),
+      'DESCRIPTION:' + esc(tekst()),
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    var blob = new Blob([ics], { type: 'text/calendar' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'mijn-volgende-stap.ics';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    zeg('Open het bestand om het in je agenda te zetten');
+  });
+})();
+</script>
+</body>
+</html>
