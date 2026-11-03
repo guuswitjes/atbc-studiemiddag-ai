@@ -111,6 +111,7 @@ img { max-width: 100%; height: auto; }
 
 .onderdeel { padding-top: 40px; }
 .onderdeel > .badge { margin-bottom: 12px; }
+.nr-klein { font-family: var(--font-display); font-weight: 800; font-size: 20px; line-height: 1; color: var(--fg-faint); margin: 0 0 10px; }
 .onderdeel h3.titel { font-size: clamp(24px, 3.4vw, 32px); font-weight: 800; line-height: 1.05; margin: 0 0 16px; }
 .onderdeel h4 { color: var(--fg); font-size: 18px; margin: 28px 0 10px; }
 .lead { font-size: 19px; color: var(--fg-muted); max-width: 62ch; }
