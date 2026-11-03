@@ -46,11 +46,11 @@
       <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-3" aria-label="Ronde 1: onderdelen tonen of verbergen"></button>
     </div>
     <div class="nav-sub" id="nav-3">
-      <a class="nav-link sub" href="#s3-1"><span class="rd-num">3.1</span><span>Schrijf je instructie: vijf vragen</span></a>
-      <a class="nav-link sub" href="#s3-2"><span class="rd-num">3.2</span><span>Zo kan een instructie klinken</span></a>
-      <a class="nav-link sub" href="#s3-3"><span class="rd-num">3.3</span><span>Zo bouw je hem in Copilot</span></a>
-      <a class="nav-link sub" href="#s3-4"><span class="rd-num">3.4</span><span>Andere tools</span></a>
-      <a class="nav-link sub" href="#s3-5"><span class="rd-num">3.5</span><span>Drie tips</span></a>
+      <a class="nav-link sub" href="#s3-1"><span class="rd-num">3.1</span><span>Drie tips</span></a>
+      <a class="nav-link sub" href="#s3-2"><span class="rd-num">3.2</span><span>Schrijf je instructie: vijf vragen</span></a>
+      <a class="nav-link sub" href="#s3-3"><span class="rd-num">3.3</span><span>Zo kan een instructie klinken</span></a>
+      <a class="nav-link sub" href="#s3-4"><span class="rd-num">3.4</span><span>Zo bouw je hem in Copilot</span></a>
+      <a class="nav-link sub" href="#s3-5"><span class="rd-num">3.5</span><span>Andere tools</span></a>
     </div>
   </div>
   <div class="nav-group" data-group>
@@ -181,7 +181,7 @@
         <ol class="stappen">
           <li><div><b class="kop">Eén zin, in een gewone chat</b><p class="uitleg">In Copilot. De AI zocht zelf op het web.</p></div></li>
           <li><div><b class="kop">Dezelfde zin, met een diepere zoekfunctie</b><p class="uitleg">In Claude, met Research aan. Grondig en met bronnen, maar lang en van overal vandaan.</p></div></li>
-          <li><div><b class="kop">Onze documenten plus een korte uitleg</b><p class="uitleg">In een Copilot-notebook, met de drie documenten en de startinstructie (bij 3.3): voor wie, wat moet hij doen, alleen uit deze documenten, kort, met de bron, en verzin niets.</p></div></li>
+          <li><div><b class="kop">Onze documenten plus een korte uitleg</b><p class="uitleg">In een Copilot-notebook, met de drie documenten en de startinstructie (bij 3.4): voor wie, wat moet hij doen, alleen uit deze documenten, kort, met de bron, en verzin niets.</p></div></li>
         </ol>
       </div>
     </details>
@@ -194,6 +194,7 @@
       <div class="kolom"><p class="tkop">Doe het</p><p>Nieuwe chat in je tool. Zet de documenten erbij. Vraag wat jij als docent wilt weten over de start van je studenten.</p></div>
       <div class="kolom"><p class="tkop">Kijk ernaar</p><p>Vind je het goed? Wat zou je anders vragen? Mis je een document?</p></div>
     </div>
+    <p><b>Zo zet je de documenten erbij:</b> download de drie PDF's hieronder en sleep ze in het invoerveld van je chat, of klik op het plusje of paperclipje ernaast.</p>
     <h4>De documenten</h4>
     <ul class="docs">
       <li><span>Inschrijvingsreglement 2026-2027 ATBC</span><a class="dl" href="documenten/inschrijvingsreglement-2026-2027-ATBC.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
@@ -225,7 +226,25 @@
   <p class="intro">Je bouwt een hulp voor een nieuwe student Chemie, op de drie documenten van de opleiding. Tot 14:10.</p>
 
   <section class="onderdeel" id="s3-1">
-    <p class="nr-klein">3.1</p>
+    <p class="badge"><span>Reader</span><b>3.1</b></p>
+    <h3 class="titel">Drie tips</h3>
+    <ol class="stappen">
+      <li><div><b class="kop">Praat in plaats van typen</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>H</kbd></div><p class="uitleg">Klik in het invoerveld, druk de toetsen in en praat.</p></div></li>
+      <li><div><b class="kop">Vast? Maak een screenshot</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></div><p class="uitleg">Plak hem in de chat en vraag: ik ben hier, wat moet ik doen?</p></div></li>
+      <li><div><b class="kop">Geen idee wat je moet vragen?</b><p class="uitleg">Laat de AI eerst drie vragen aan jou stellen. Kopieer deze prompt naar een nieuwe chat.</p></div></li>
+    </ol>
+    <div class="prompt" id="drie-vragen"><p class="label">Laat de AI eerst vragen stellen</p><button class="copy-btn" type="button">Kopieer</button><pre>Ik wil AI gebruiken voor een taak in mijn werk als docent, maar ik weet nog niet goed wat ik moet vragen.
+
+Stel me eerst drie vragen, één voor één. Wacht na elke vraag op mijn antwoord. Vraag naar:
+1. wat ik wil maken of laten doen;
+2. voor wie het is;
+3. welke informatie of documenten ik heb.
+
+Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
+  </section>
+
+  <section class="onderdeel" id="s3-2">
+    <p class="nr-klein">3.2</p>
     <h3 class="titel">Schrijf je instructie: vijf vragen</h3>
     <ol class="stappen">
       <li><div><b class="kop">Voor wie is hij?</b><p class="voorbeeld">Een nieuwe student Chemie, in de eerste week</p></div></li>
@@ -237,8 +256,8 @@
     <p>Beantwoord elke vraag in één of twee gewone zinnen. <b>De vragen zelf hoeven er niet in.</b></p>
   </section>
 
-  <section class="onderdeel" id="s3-2">
-    <p class="badge"><span>Reader</span><b>3.2</b></p>
+  <section class="onderdeel" id="s3-3">
+    <p class="badge"><span>Reader</span><b>3.3</b></p>
     <h3 class="titel">Zo kan een instructie klinken</h3>
     <p class="lead">Voorbeeld: een hulp voor feedback op labverslagen. Elke alinea beantwoordt een van de vijf vragen.</p>
     <div class="instructie">
@@ -263,12 +282,12 @@ Staat iets niet in de criteria of de schrijfwijzer, zeg dat. Verzin geen eisen.<
     <p><b>Een andere hulp dan die van jou. Schrijf nu je eigen versie, voor je starthulp.</b></p>
   </section>
 
-  <section class="onderdeel" id="s3-3">
-    <p class="badge"><span>Reader</span><b>3.3</b></p>
+  <section class="onderdeel" id="s3-4">
+    <p class="badge"><span>Reader</span><b>3.4</b></p>
     <h3 class="titel">Zo bouw je hem in Copilot</h3>
     <ol class="stappen">
       <li><div><b class="kop">Schrijf je instructie</b><p class="uitleg">De vijf vragen, in gewone zinnen. In Word, opslaan als <b>instructie starthulp</b>.</p></div></li>
-      <li><div><b class="kop">Maak een notebook</b><p class="uitleg">In Copilot. Andere tool? Kijk bij <a href="#s3-4">3.4</a>.</p></div></li>
+      <li><div><b class="kop">Maak een notebook</b><p class="uitleg">In Copilot. Andere tool? Kijk bij <a href="#s3-5">3.5</a>.</p></div></li>
       <li><div><b class="kop">Zet alles erin</b><p class="uitleg">De drie documenten en je instructie.</p></div></li>
       <li><div><b class="kop">Test met een roze post-it</b><p class="uitleg">Staat het antwoord in de documenten?</p></div></li>
     </ol>
@@ -311,8 +330,8 @@ Bevestig in één zin dat je klaar bent. Wacht dan op de eerste vraag.</pre></di
     <p class="klein">Lukt een notebook niet? Open een gewone chat en plak je instructie als eerste bericht. Lukt uploaden niet? Kopieer de tekst van de twee webpagina's en plak die erbij.</p>
   </section>
 
-  <section class="onderdeel" id="s3-4">
-    <p class="badge"><span>Reader</span><b>3.4</b></p>
+  <section class="onderdeel" id="s3-5">
+    <p class="badge"><span>Reader</span><b>3.5</b></p>
     <h3 class="titel">Andere tools</h3>
     <p class="lead">Werk je in ChatGPT, Claude of Gemini? Daar heet het een project of een notebook, met een eigen vak voor je instructie. Je hoeft je instructie dus niet als Word-document toe te voegen.</p>
 
@@ -354,24 +373,6 @@ Bevestig in één zin dat je klaar bent. Wacht dan op de eerste vraag.</pre></di
 
     <p><b>Lukt het niet binnen vijf minuten? Stap over op Copilot.</b></p>
   </section>
-
-  <section class="onderdeel" id="s3-5">
-    <p class="badge"><span>Reader</span><b>3.5</b></p>
-    <h3 class="titel">Drie tips</h3>
-    <ol class="stappen">
-      <li><div><b class="kop">Praat in plaats van typen</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>H</kbd></div><p class="uitleg">Klik in het invoerveld, druk de toetsen in en praat.</p></div></li>
-      <li><div><b class="kop">Vast? Maak een screenshot</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></div><p class="uitleg">Plak hem in de chat en vraag: ik ben hier, wat moet ik doen?</p></div></li>
-      <li><div><b class="kop">Geen idee wat je moet vragen?</b><p class="uitleg">Laat de AI eerst drie vragen aan jou stellen. Kopieer deze prompt naar een nieuwe chat.</p></div></li>
-    </ol>
-    <div class="prompt" id="drie-vragen"><p class="label">Laat de AI eerst vragen stellen</p><button class="copy-btn" type="button">Kopieer</button><pre>Ik wil AI gebruiken voor een taak in mijn werk als docent, maar ik weet nog niet goed wat ik moet vragen.
-
-Stel me eerst drie vragen, één voor één. Wacht na elke vraag op mijn antwoord. Vraag naar:
-1. wat ik wil maken of laten doen;
-2. voor wie het is;
-3. welke informatie of documenten ik heb.
-
-Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
-  </section>
 </section>
 
 <!-- ================= 4 RONDE 2 ================= -->
@@ -408,7 +409,7 @@ Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
       <summary>Snel klaar? Drie dingen om te proberen</summary>
       <div class="fold-body">
         <ol class="stappen">
-          <li><div><b class="kop">Vergelijk</b><p class="uitleg">Leg je eigen instructie naast de startinstructie bij <a href="#startinstructie">3.3</a>. Wat heb jij dat daar niet in staat, en andersom?</p></div></li>
+          <li><div><b class="kop">Vergelijk</b><p class="uitleg">Leg je eigen instructie naast de startinstructie bij <a href="#startinstructie">3.4</a>. Wat heb jij dat daar niet in staat, en andersom?</p></div></li>
           <li><div><b class="kop">Twee bronnen die botsen</b><p class="uitleg">Zet ook <a href="documenten/mail-nieuwe-studenten-chemie-2023.pdf" download>de mail aan nieuwe studenten uit 2023</a> erbij en vraag: wanneer zijn de introdagen? Welke klopt, en hoe weet je dat?</p></div></li>
           <li><div><b class="kop">Een voorbeeld</b><p class="uitleg">Geef je starthulp één voorbeeld van een goed antwoord.</p></div></li>
         </ol>
@@ -467,7 +468,7 @@ Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
       <li><div><b class="kop">Hoe controleer jij wat eruit komt?</b></div></li>
     </ol>
     <div class="kolom"><p class="tkop">Post-it</p><p>Schrijf je taak op een post-it en plak hem op de muur. Zie je dezelfde taak? Ga naast die collega zitten.</p></div>
-    <p style="margin-top:16px">Weet je niet hoe je je taak moet uitleggen? Gebruik <a href="#drie-vragen">de prompt bij 3.5</a>: de AI stelt jou eerst drie vragen.</p>
+    <p style="margin-top:16px">Weet je niet hoe je je taak moet uitleggen? Gebruik <a href="#drie-vragen">de prompt bij 3.1</a>: de AI stelt jou eerst drie vragen.</p>
   </section>
 
   <section class="onderdeel" id="s6-2">
