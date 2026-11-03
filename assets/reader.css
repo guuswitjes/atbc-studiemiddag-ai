@@ -171,6 +171,10 @@ ol.stappen .voorbeeld { color: var(--fg-subtle); font-size: 15px; margin: 4px 0 
 .chat details summary { font-size: 14px; padding: 12px 14px; }
 .chat details .inhoud { padding: 0 14px 14px; }
 
+.fold-body.uitkomst { max-height: 70vh; overflow-y: auto; border-top: var(--border-hair); padding-top: 16px; font-size: 16px; overflow-wrap: anywhere; }
+.fold-body.uitkomst ul { padding-left: 22px; margin: 4px 0 12px; }
+.fold-body.uitkomst li { margin-bottom: 2px; }
+
 /* ---------- Prompt met kopieerknop ---------- */
 .prompt { position: relative; background: var(--han-wit); border: var(--border-base); border-radius: var(--radius-1); margin: 16px 0; }
 .prompt pre {
