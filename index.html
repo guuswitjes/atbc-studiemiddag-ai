@@ -10,166 +10,283 @@
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="naam" href="#">Studiemiddag AI <span>·</span> Chemie</a>
-    <nav aria-label="Onderdelen">
-      <a href="#programma">Programma</a>
-      <a href="#start">Start</a>
-      <a href="#uitkomsten">Drie uitkomsten</a>
-      <a href="#bouwen">Bouwen</a>
-      <a href="#uitdaging">Uitdaging</a>
-      <a href="#eigen-werk">Eigen werk</a>
-      <a href="kaartje.html">Kaartje</a>
-    </nav>
-  </div>
+<header class="topbar">
+  <a class="naam" href="#top">Studiemiddag AI <span>·</span> Chemie</a>
+  <span class="meta">Woensdag 4 november 2026 · 13:15 tot 16:00</span>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
 </header>
+
+<div class="layout">
+
+<nav class="sidebar" id="sidebar" aria-label="Inhoud">
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s1"><span class="nav-num">1</span><span class="nav-title">Start</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-1" aria-label="Start: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-1">
+      <a class="nav-link sub" href="#s1-1"><span class="rd-num">1.1</span><span>Programma</span></a>
+      <a class="nav-link sub" href="#s1-2"><span class="rd-num">1.2</span><span>Tools en afspraken</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s2"><span class="nav-num">2</span><span class="nav-title">Dezelfde vraag, drie uitkomsten</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-2" aria-label="Dezelfde vraag: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-2">
+      <a class="nav-link sub" href="#s2-1"><span class="rd-num">2.1</span><span>De drie uitkomsten</span></a>
+      <a class="nav-link sub" href="#s2-2"><span class="rd-num">2.2</span><span>Nu zelf</span></a>
+      <a class="nav-link sub" href="#s2-3"><span class="rd-num">2.3</span><span>Drie knoppen</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s3"><span class="nav-num">3</span><span class="nav-title">Ronde 1: bouw je starthulp</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-3" aria-label="Ronde 1: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-3">
+      <a class="nav-link sub" href="#s3-1"><span class="rd-num">3.1</span><span>Schrijf je instructie: vijf vragen</span></a>
+      <a class="nav-link sub" href="#s3-2"><span class="rd-num">3.2</span><span>Zo kan een instructie klinken</span></a>
+      <a class="nav-link sub" href="#s3-3"><span class="rd-num">3.3</span><span>Zo bouw je hem in Copilot</span></a>
+      <a class="nav-link sub" href="#s3-4"><span class="rd-num">3.4</span><span>Andere tools</span></a>
+      <a class="nav-link sub" href="#s3-5"><span class="rd-num">3.5</span><span>Drie tips</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s4"><span class="nav-num">4</span><span class="nav-title">Ronde 2: beter maken</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-4" aria-label="Ronde 2: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-4">
+      <a class="nav-link sub" href="#s4-1"><span class="rd-num">4.1</span><span>Rondje na rondje beter</span></a>
+      <a class="nav-link sub" href="#s4-2"><span class="rd-num">4.2</span><span>Uitdaging voor bouwers</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s5"><span class="nav-num">5</span><span class="nav-title">Inspiratie</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-5" aria-label="Inspiratie: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-5">
+      <a class="nav-link sub" href="#s5-1"><span class="rd-num">5.1</span><span>Breng de AI naar je informatie</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s6"><span class="nav-num">6</span><span class="nav-title">Ronde 3: je eigen werk</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-6" aria-label="Ronde 3: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-6">
+      <a class="nav-link sub" href="#s6-1"><span class="rd-num">6.1</span><span>Jij bent de manager van je taken</span></a>
+      <a class="nav-link sub" href="#s6-2"><span class="rd-num">6.2</span><span>Maak het voor je eigen werk</span></a>
+    </div>
+  </div>
+  <div class="nav-group" data-group>
+    <div class="nav-main">
+      <a class="nav-link head" href="#s7"><span class="nav-num">7</span><span class="nav-title">Afsluiten</span></a>
+      <button class="nav-caret" type="button" aria-expanded="true" aria-controls="nav-7" aria-label="Afsluiten: onderdelen tonen of verbergen"></button>
+    </div>
+    <div class="nav-sub" id="nav-7">
+      <a class="nav-link sub" href="#s7-1"><span class="rd-num">7.1</span><span>Na vandaag</span></a>
+      <a class="nav-link sub" href="#s7-2"><span class="rd-num">7.2</span><span>Mijn volgende stap</span></a>
+    </div>
+  </div>
+  <p class="nav-extra">Vragen: <a href="mailto:guus.witjes@han.nl">guus.witjes@han.nl</a></p>
+</nav>
+
+<main class="main" id="top">
 
 <div class="hero">
   <div class="stripe" aria-hidden="true"></div>
-  <div class="wrap">
-    <p class="eyebrow">Docententeam Chemie · woensdag 4 november 2026</p>
-    <h1>Zelf een AI-hulp bouwen</h1>
-    <p>Alles van vanmiddag op één plek: de stappen, de instructie, de documenten en je kaartje voor de volgende stap.</p>
+  <p class="eyebrow">Docententeam Chemie · woensdag 4 november 2026</p>
+  <h1>Zelf maken<br>met AI</h1>
+  <p>Alles van vanmiddag op één plek: de stappen, de instructies, de documenten en je kaartje voor de volgende stap.</p>
+  <div class="uitleg">
+    <p class="badge"><span>Reader</span><b>1.1</b></p>
+    <p>Zie je dit blokje rechtsonder op een slide? Klik in het menu op hetzelfde nummer.</p>
   </div>
 </div>
 
-<main>
+<div class="inhoud">
 
-<section class="blok" id="programma">
-  <div class="wrap">
-    <p class="eyebrow">Programma</p>
-    <h2>Van 13:15 tot 16:00</h2>
+<!-- ================= 1 START ================= -->
+<section class="hoofdstuk" id="s1">
+  <div class="hoofdstuk-kop"><span class="nr">1</span><h2>Start</h2></div>
+
+  <section class="onderdeel" id="s1-1">
+    <p class="badge"><span>Reader</span><b>1.1</b></p>
+    <h3 class="titel">Programma</h3>
+    <div class="tabel-wrap">
     <table>
-      <tr><th>Tijd</th><th>Wat</th></tr>
-      <tr><td class="tijd">13:15</td><td>Rondje: je naam en één stuk werk dat steeds terugkomt</td></tr>
-      <tr><td class="tijd">13:35</td><td>Twee afspraken</td></tr>
-      <tr><td class="tijd">13:40</td><td>Dezelfde vraag, drie uitkomsten</td></tr>
-      <tr><td class="tijd">13:55</td><td>Je eigen starthulp voor studenten bouwen en testen</td></tr>
-      <tr><td class="tijd">14:25</td><td>Pauze</td></tr>
-      <tr><td class="tijd">14:35</td><td>Delen en bijschaven</td></tr>
-      <tr><td class="tijd">14:50</td><td>Wat kan er nog meer</td></tr>
-      <tr><td class="tijd">15:15</td><td>Maak het voor je eigen werk</td></tr>
-      <tr><td class="tijd">15:40</td><td>Afsluiten, daarna borrel</td></tr>
+      <tr><th>Tijd</th><th>Wat</th><th class="naar">Reader</th></tr>
+      <tr><td class="tijd">13:15</td><td>Start en post-its</td><td class="naar"><a href="#s1-1">1</a></td></tr>
+      <tr><td class="tijd">13:30</td><td>Drie uitkomsten en nu zelf</td><td class="naar"><a href="#s2-1">2</a></td></tr>
+      <tr><td class="tijd">13:50</td><td>Ronde 1: bouwen</td><td class="naar"><a href="#s3-1">3</a></td></tr>
+      <tr><td class="tijd">14:10</td><td>Laat zien</td><td class="naar"></td></tr>
+      <tr><td class="tijd">14:20</td><td>Ronde 2: beter maken</td><td class="naar"><a href="#s4-1">4</a></td></tr>
+      <tr><td class="tijd">14:32</td><td>Pauze</td><td class="naar"></td></tr>
+      <tr><td class="tijd">14:45</td><td>Inspiratie</td><td class="naar"><a href="#s5-1">5</a></td></tr>
+      <tr><td class="tijd">14:59</td><td>Ronde 3: je eigen werk</td><td class="naar"><a href="#s6-1">6</a></td></tr>
+      <tr><td class="tijd">15:34</td><td>Laat zien</td><td class="naar"></td></tr>
+      <tr><td class="tijd">15:45</td><td>Kaartje, top en tip</td><td class="naar"><a href="#s7-2">7</a></td></tr>
+      <tr><td class="tijd">16:00</td><td>Borrel</td><td class="naar"></td></tr>
     </table>
-  </div>
-</section>
-
-<section class="blok" id="start">
-  <div class="wrap">
-    <p class="eyebrow">Voor je start</p>
-    <h2>Inloggen en twee afspraken</h2>
-    <p class="lead">Werk in de tool die je al hebt. Geen eigen tool? Log in op Copilot met je HAN-account. Die heeft iedereen.</p>
-
-    <h3>Twee afspraken</h3>
-    <div class="kaarten">
-      <div class="kaart"><img src="assets/icons/check.webp" alt=""><h3>Jij blijft verantwoordelijk</h3><p>Ook als AI het schreef.</p></div>
-      <div class="kaart"><img src="assets/icons/student.webp" alt=""><h3>Geen studentgegevens</h3><p>Niet in je eigen account, niet in deze chats. Alle documenten van vandaag zijn openbaar.</p></div>
     </div>
 
-    <h3>Spiekregel: waar blijven documenten en instructie staan?</h3>
-    <table>
-      <tr><th>Tool</th><th>Zo doe je het</th></tr>
-      <tr><td class="tool">Copilot (HAN)</td><td>Maak een notebook. Zet de documenten erin, en de instructie als Word-document erbij.</td></tr>
-      <tr><td class="tool">ChatGPT</td><td>Maak een project. Instructie in het instructieveld, documenten erbij.</td></tr>
-      <tr><td class="tool">Claude</td><td>Maak een project. Instructie in het instructieveld, documenten erbij.</td></tr>
-      <tr><td class="tool">Gemini</td><td>Maak een Gem. Instructie en bestanden in de Gem.</td></tr>
-    </table>
-    <p>Lukt het in je eigen tool niet binnen vijf minuten? Stap over op Copilot.</p>
-
-    <h3>Drie tips</h3>
-    <div class="kaarten">
-      <div class="kaart"><img src="assets/icons/chat.webp" alt=""><h3>Praat in plaats van typen</h3><p>Windows + H</p></div>
-      <div class="kaart"><img src="assets/icons/search.webp" alt=""><h3>Vast? Maak een screenshot</h3><p>Windows + Shift + S, en vraag de AI wat je moet doen.</p></div>
-      <div class="kaart"><img src="assets/icons/helpdesk.webp" alt=""><h3>Geen idee wat je moet vragen?</h3><p>Laat de AI eerst drie vragen aan jou stellen. De prompt staat hieronder.</p></div>
+    <h4>Om vier uur heb je drie dingen</h4>
+    <div class="tegels">
+      <div class="tegel"><img src="assets/icons/student.webp" alt=""><p class="tkop">Een starthulp</p><p>Voor nieuwe studenten, op de documenten van je eigen opleiding. Door jezelf getest.</p></div>
+      <div class="tegel"><img src="assets/icons/search.webp" alt=""><p class="tkop">Het verschil gezien</p><p>Wat er verandert als je AI een instructie en de juiste documenten meegeeft.</p></div>
+      <div class="tegel"><img src="assets/icons/matching.webp" alt=""><p class="tkop">Je eigen werk</p><p>Een begin, voor een taak die steeds terugkomt. Met een collega en een datum.</p></div>
     </div>
-    <h3>Prompt: laat de AI eerst vragen stellen</h3>
-    <div class="prompt"><button type="button" data-kopieer>Kopieer</button><pre>Ik wil AI gebruiken voor een taak in mijn werk als docent, maar ik weet nog niet goed wat ik moet vragen.
+  </section>
 
-Stel me eerst drie vragen, één voor één. Wacht na elke vraag op mijn antwoord. Vraag naar:
-1. wat ik wil maken of laten doen;
-2. voor wie het is;
-3. welke informatie of documenten ik heb.
-
-Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
-  </div>
+  <section class="onderdeel" id="s1-2">
+    <p class="badge"><span>Reader</span><b>1.2</b></p>
+    <h3 class="titel">Tools en afspraken</h3>
+    <p class="lead">Werk vandaag in de tool die je hebt: Copilot, ChatGPT, Claude of Gemini. Geen eigen tool? Copilot met je HAN-account.</p>
+    <h4>Twee afspraken</h4>
+    <div class="tegels">
+      <div class="tegel donker"><img src="assets/icons/check.webp" alt=""><p class="tkop">Jij blijft verantwoordelijk</p><p>Ook als AI het schreef.</p></div>
+      <div class="tegel donker"><img src="assets/icons/student.webp" alt=""><p class="tkop">Geen studentgegevens</p><p>Niet in je eigen account, niet in deze chats.</p></div>
+    </div>
+  </section>
 </section>
 
-<section class="blok" id="uitkomsten">
-  <div class="wrap">
-    <p class="eyebrow">Dezelfde vraag, drie uitkomsten</p>
-    <h2>Wat moet een nieuwe student Chemie weten?</h2>
-    <p class="lead">Wij stelden deze ene vraag op drie manieren. Welke geef je een nieuwe student? Waarom die? En wat denk je dat er bij elke uitkomst gevraagd is?</p>
+<!-- ================= 2 DEZELFDE VRAAG ================= -->
+<section class="hoofdstuk" id="s2">
+  <div class="hoofdstuk-kop"><span class="nr">2</span><h2>Dezelfde vraag, drie uitkomsten</h2></div>
+
+  <section class="onderdeel" id="s2-1">
+    <p class="badge"><span>Reader</span><b>2.1</b></p>
+    <h3 class="titel">Wat moet een nieuwe student Chemie weten?</h3>
+    <p class="lead">Wij stelden hem op drie manieren. Lees mee en kies met je buur: welke geef je een nieuwe student? Waarom die, en niet de andere? En wat denk je dat er bij elke uitkomst gevraagd is?</p>
     <div class="uitkomsten">
       <div class="chat"><p class="vraag">Wat moet een nieuwe student Chemie aan de HAN weten?</p><div class="antwoord"><p>Een nieuwe student Chemie aan de HAN (Hogeschool van Arnhem en Nijmegen) hoeft niet alles al te weten, maar er zijn een paar zaken die het verschil maken tussen een soepele start en een lastig eerste semester.</p><p><b>1. Wiskunde en rekenen zijn belangrijker dan veel studenten denken</b></p></div><details><summary>Lees het hele antwoord</summary><div class="inhoud antwoord"><p>Een nieuwe student Chemie aan de HAN (Hogeschool van Arnhem en Nijmegen) hoeft niet alles al te weten, maar er zijn een paar zaken die het verschil maken tussen een soepele start en een lastig eerste semester.</p><p><b>1. Wiskunde en rekenen zijn belangrijker dan veel studenten denken</b></p><p>Chemie bestaat niet alleen uit proefjes. Je gebruikt regelmatig:</p><ul><li>Concentratieberekeningen</li><li>Mol- en massaomrekeningen</li><li>Grafieken interpreteren</li><li>Basisstatistiek</li><li>Formules herschrijven</li></ul><p>Een opfriscursus middelbare-schoolwiskunde (vooral procenten, machten, logaritmen en vergelijkingen) helpt enorm.</p><p><b>2. Veilig werken staat altijd voorop</b></p><p>Vanaf de eerste practica krijg je te maken met:</p><ul><li>Veiligheidsbrillen en labjassen</li><li>Veiligheidsbladen (SDS/MSDS)</li><li>Gevaarssymbolen (CLP/GHS)</li><li>Afvalscheiding van chemicaliën</li></ul><p>In het laboratorium geldt vaak: veiligheid gaat vóór snelheid en resultaat.</p><p><b>3. Practica vragen voorbereiding</b></p><p>Veel eerstejaars verwachten dat ze in het lab leren wat ze moeten doen. In werkelijkheid moet je vaak:</p><ul><li>Het practicum vooraf lezen</li><li>Berekeningen vooraf maken</li><li>Het doel van het experiment begrijpen</li><li>Resultaten direct verwerken</li></ul><p>Wie onvoorbereid verschijnt, loopt snel achter.</p><p><b>4. Verslaglegging is een groot onderdeel van de opleiding</b></p><p>Chemici experimenteren niet alleen; ze documenteren ook. Je schrijft:</p><ul><li>Prakticumverslagen</li><li>Onderzoeksrapporten</li><li>Literatuurstudies</li><li>Presentaties</li></ul><p>Goede communicatievaardigheden zijn net zo belangrijk als laboratoriumvaardigheden.</p><p><b>5. Je leert meer dan alleen scheikunde</b></p><p>Op de HAN komen ook onderwerpen voorbij zoals:</p><ul><li>Analytische chemie</li><li>Organische chemie</li><li>Fysische chemie</li><li>Biochemie</li><li>Procestechnologie</li><li>Kwaliteitszorg</li><li>Data-analyse</li></ul><p>Daardoor kun je later verschillende kanten op.</p><p><b>6. Samenwerken hoort bij het vak</b></p><p>In de beroepspraktijk werk je vrijwel altijd in teams. Tijdens de opleiding krijg je daarom:</p><ul><li>Groepsprojecten</li><li>Projectmatig werken</li><li>Presentaties</li><li>Opdrachten met bedrijven</li></ul><p>Goede planning en communicatie zijn daarom belangrijk.</p><p><b>7. De arbeidsmarkt is gunstig</b></p><p>Afgestudeerden van Chemie vinden vaak werk bij:</p><ul><li>Analytische laboratoria</li><li>Farmaceutische bedrijven</li><li>Voedingsmiddelenindustrie</li><li>Waterbedrijven</li><li>Milieulaboratoria</li><li>Materiaal- en kunststofbedrijven</li></ul><p>In Oost-Nederland zijn bijvoorbeeld organisaties actief zoals Alliander, Vitens, Nouryon, Teijin Aramid, bovengenoemde laboratoria en diverse advies- en onderzoeksbureaus waar chemische kennis waardevol is.</p><p><b>8. Stage en praktijkervaring maken het verschil</b></p><p>Werkgevers kijken vaak naar:</p><ul><li>Stage-ervaring</li><li>Praktijkvaardigheden</li><li>Zelfstandig kunnen werken</li><li>Nauwkeurigheid in het lab</li></ul><p>Begin daarom vroeg met het opbouwen van een professioneel netwerk en een goed LinkedIn-profiel.</p><p><b>Tips voor je eerste 100 dagen</b></p><ul><li>Volg alle introductieactiviteiten.</li><li>Maak vanaf week 1 samenvattingen.</li><li>Zoek een vaste practicumgroep.</li><li>Stel vragen in het lab.</li><li>Houd je verslagen direct bij.</li><li>Besteed extra aandacht aan rekenen en statistiek.</li><li>Wacht niet tot vlak voor tentamens met leren.</li></ul><p>Kort samengevat: een HAN-student Chemie die nieuwsgierig is, nauwkeurig werkt, veilig handelt en consequent zijn practica en verslagen voorbereidt, heeft meestal een uitstekende start van de opleiding.</p></div></details><p class="nummer">1</p></div>
       <div class="chat"><p class="vraag">Wat moet een nieuwe student Chemie aan de HAN weten?</p><div class="antwoord"><p><b>Starten met Chemie aan de HAN: praktisch overzicht voor eerstejaars (2026-2027)</b></p><p>Als nieuwe voltijdstudent Chemie aan de HAN volg je een vierjarige bachelor van 240 EC in het eigen ATBC-gebouw aan de Laan van Scheut 2 in Nijmegen, met vanaf dag één veel labwerk. Het belangrijkste nieuws voor jouw jaar: Chemie geeft sinds september 2026 geen bindend studieadvies meer, maar een niet-bindend persoonlijk studieadvies (PSA) met een doorstroomnorm naar jaar 2.</p></div><details><summary>Lees het hele antwoord</summary><div class="inhoud antwoord"><p><b>Starten met Chemie aan de HAN: praktisch overzicht voor eerstejaars (2026-2027)</b></p><p>Als nieuwe voltijdstudent Chemie aan de HAN volg je een vierjarige bachelor van 240 EC in het eigen ATBC-gebouw aan de Laan van Scheut 2 in Nijmegen, met vanaf dag één veel labwerk. Het belangrijkste nieuws voor jouw jaar: Chemie geeft sinds september 2026 geen bindend studieadvies meer, maar een niet-bindend persoonlijk studieadvies (PSA) met een doorstroomnorm naar jaar 2.</p><p><b>TL;DR</b></p><p>Opbouw: het eerste halfjaar start je samen met Biologie en Medisch Laboratoriumonderzoek, daarna gaat het volledig over chemie. In jaar 3 kies je analytische chemie of organische en polymeerchemie. Jaar 3 en 4 bevatten een stage en een minor (elk een halfjaar, volgorde zelf te kiezen) en een afstudeeropdracht van een halfjaar.</p><p>Studieadvies: het HAN-nieuwsbericht “HAN schaft het BSA af” zet Chemie (voltijd en deeltijd) op de lijst van opleidingen die al in september 2026 met het PSA zijn gestart, een jaar voor de HAN-brede invoering in 2027-2028. Het advies is niet bindend. Je mag wel pas met de vakken van jaar 2 beginnen als je de doorstroomnorm haalt. Volgens de HAN-propedeusepagina is dat HAN-breed “minimaal 30 tot 45 studiepunten van het 1e jaar”. De Chemie-pagina “Dit is je studie” noemt minimaal 45 EC. De exacte norm staat in de OS-OER.</p><p>Direct regelen: een laptop (Windows aanbevolen, geen Chromebook of tablet), een labkit uit de CampusStore en de verplichte LabArchives-licentie voor het elektronische labjournaal. Raak ook wegwijs in Insite, OSIRIS, MyX en Brightspace. Met vragen ga je eerst naar je studieloopbaanbegeleider.</p><p><b>Key Findings</b></p><p>De voltijdopleiding duurt 4 jaar. Met een goed aansluitend vwo- of mbo-diploma kan het soms in 3 jaar: je stroomt dan in jaar 2 in en krijgt vrijstelling voor de propedeuse als je jaar 2 goed afrondt.</p><p>Volgens de Chemie-pagina “Dit is je studie” heb je in jaar 1 “ongeveer 12 uur theorie en 8 uur praktijk” en “ongeveer 20 uur” zelfstudie per week. Een EC staat voor 28 studiebelastingsuren, dus een studiejaar van 60 EC komt neer op 1680 uur.</p><p>Bij de meeste HAN-opleidingen krijg je studiepunten per blok: pas als alle onderdelen van een blok gehaald zijn, worden de punten toegekend. Herkansen kan.</p><p>Veiligheid is een apart vak in jaar 1. De opleidingspagina Chemie voltijd noemt het expliciet als leerdoel: “Je leert hoe je veilig werkt met gevaarlijke stoffen.”</p><p>De Engelstalige variant Chemistry heeft dezelfde inhoud. Chemie zelf wordt in het Nederlands gegeven.</p><p>De studievereniging voor Chemie is SV ‘t Reactievat, die ook de introductie organiseert.</p><p><b>Details</b></p><p><b>1. Opbouw en inhoud van de opleiding</b></p><p>Propedeuse (jaar 1). De eerste zes maanden studeer je samen met studenten Biologie en Medisch Laboratoriumonderzoek (BML); de programma’s zijn in die periode gelijk. De tweede helft gaat volledig over chemie: een theoretische basis in analytische en organische chemie, en daarnaast polymeerchemie.</p><p>De HAN noemt voor jaar 1 onder meer:</p><ul><li>practica en laboratoriumpraktijk</li><li>wiskunde/labrekenen en natuurkunde</li><li>veiligheid</li><li>workshop Excel en sociale vaardigheden</li><li>histologische kleuringen, (micro)biologie, moleculaire technieken, microscopie en biochemische technieken</li><li>atoom- en molecuulopbouw, workshop reactiemechanismen en thermodynamica</li></ul><p>Je werkt in groepjes aan (bijna) realistische biomedische en chemische vraagstukken.</p><p>Hoofdfase (jaar 2). Je verdiept de theoretische basis en doet veel onderzoek in groepjes en projecten. Voorbeelden zijn het maken van bioplastics, of een organische reactie bestuderen en het reactiemengsel analyseren. Aan het eind van jaar 2 ken je alle aspecten van het vak analist globaal.</p><p>Specialisatie (begin jaar 3). Je kiest tussen:</p><ul><li>Analytische chemie: kwalitatieve en kwantitatieve analyse, bijvoorbeeld van schadelijke stoffen, bodemmonsters, voedingsstoffen of forensische monsters.</li><li>Organische en polymeerchemie: (synthetische) organische chemie, vaak voor de farmaceutische sector, of polymeerchemie (lijmen, kitten, coatings, plastics, vezels).</li></ul><p>Projecten in jaar 3 vinden vaak plaats bij of in opdracht van bedrijven.</p><p>Stage, minor en afstuderen (jaar 3 en 4). In jaar 3 en de eerste helft van jaar 4 doe je een stage en een minor van elk een halfjaar, in een volgorde die je zelf kiest. De HAN onderscheidt verdiepende, verbredende en doorstroomminoren. Als voorbeelden noemt de opleiding onder meer datatechnologie, biobased innovations, drug discovery en bio-nanotechnologie. Het laatste halfjaar staat in het teken van de afstudeeropdracht: zelfstandig onderzoek in het laboratorium van een bedrijf of instituut, eventueel in het buitenland. Je ontvangt de graad Bachelor of Science met een Engelstalig diplomasupplement.</p><p>Extra uitdaging: Analytical Sciences Talent Program (ASTP). Getalenteerde studenten kunnen in de propedeuse solliciteren voor dit Engelstalige programma van 3 jaar. Volgens TI-COAST wordt het georganiseerd door de HAN, Hogeschool Utrecht, Hogeschool Inholland en TI-COAST, en hoort het bij de talentprogramma’s van ChemistryNL. Volgens de HAN:</p><ul><li>zijn er jaarlijks 25 plaatsen;</li><li>sluit de sollicitatie op 31 mei;</li><li>volg je het programma vanaf je tweede jaar naast het reguliere curriculum, op zaterdagen en in vakanties (ongeveer 100 extra collegeuren per jaar).</li></ul><p>De Engelstalige HAN-pagina noemt daarbij de ChemistryNL Student Grant van € 1.200 tot € 5.000 per jaar. Deze data en bedragen kunnen per jaar verschillen; controleer ze in jouw propedeusejaar.</p><p><b>2. Toetsing en studieadvies (BSA wordt PSA)</b></p><p>De HAN schaft het bindend studieadvies af. Volgens het HAN-nieuwsbericht “HAN schaft het BSA af” geldt het PSA vanaf 2027-2028 voor alle bachelors en Ad’s. “Een groot deel van de opleidingen start hier zelfs al mee in september 2026”, en Chemie (voltijd en deeltijd) en Chemistry staan op die lijst. Voor jou betekent dat:</p><ul><li>Je studiebegeleider bespreekt in jaar 1 minimaal 3 keer met je hoe het gaat. In het laatste gesprek krijg je het PSA.</li><li>Het advies kijkt niet alleen naar studiepunten, maar ook naar motivatie, betrokkenheid, inzet, houding, aanwezigheid, geschiktheid en persoonlijke omstandigheden.</li><li>Het advies is niet bindend: jij beslist of je doorgaat.</li><li>Wel geldt een doorstroomnorm: pas als je die haalt, mag je beginnen met de vakken van jaar 2. Volgens de HAN-pagina “Je hbo propedeuse: studiepunten en studieadvies” is dat HAN-breed “minimaal 30 tot 45 studiepunten van het 1e jaar”, soms aangevuld met specifieke tentamens. Het exacte aantal voor Chemie staat in het opleidingsstatuut (OS-OER). De Chemie-pagina “Dit is je studie” stelt: “Voor de opleiding Chemie moet je aan het einde van het 1e jaar minimaal 45 studiepunten/EC’s hebben gehaald.”</li><li>Haal je de norm niet, dan blijf je ingeschreven maar loop je vertraging op. Soms mag je al enkele vakken van jaar 2 volgen.</li></ul><p>Let op twee bronnenconflicten:</p><ul><li>Studiekeuze123 vermeldt voor HAN Chemie nog een bindend studieadvies van 45 EC. Dat is achterhaald ten opzichte van de informatie van de HAN zelf.</li><li>Op de praktische-infopagina staat dat het gelinkte opleidingsstatuut dat van 2025-2026 is. Het OS-OER wordt elk jaar opnieuw vastgesteld. Controleer dus de versie 2026-2027 (via “Praktische info” op de opleidingspagina) voor de exacte doorstroomnorm, eventuele verplichte onderdelen en aanwezigheidsregels bij practica.</li></ul><p>In oudere Chemie-OER’s (2019-2020 en 2021-2022) was aanwezigheid bij praktijklessen verplicht, en leidde onvoldoende aanwezigheid tot een praktijkbeoordeling van 0,0. Reken erop dat practica ook nu aanwezigheid vereisen, maar controleer de huidige regel.</p><p><b>3. Practica en laboratoriumveiligheid</b></p><ul><li>Labwerk: je staat vanaf het begin in het lab. De Engelstalige HAN-pagina Bachelor Chemistry zegt: “You also work 1 whole day a week in the lab.”</li><li>Labkit: verplicht voor practica en te koop in de CampusStore. Op de eerste lesdag kun je hem aanschaffen. De HAN publiceert niet wat er in de labkit zit.</li><li>Labjas en veiligheidsbril: in een HAN-flyer uit 2022 voor nieuwe BML-studenten (dezelfde academie en hetzelfde gebouw) stond: “Voor de praktijklessen in het laboratorium is een labjas verplicht.” De sectorbrede Arbocatalogus hbo schrijft labjas en bril voor bij werken met ontvlambare, giftige, irriterende of oxiderende stoffen, en in zwaardere zones ongeacht de werkzaamheden. Een actuele HAN-specifieke regeling heb ik niet gevonden. Ga ervan uit dat je in het chemielab altijd labjas en veiligheidsbril draagt, en volg de instructies van docenten en labpersoneel.</li><li>Veiligheidsinstructie: veiligheid is een vak in jaar 1, en in oudere OER’s zat een “Kennistoets Veiligheid” in de eerste onderwijseenheid. Of er in 2026-2027 een aparte verplichte toets is voordat je het lab in mag, staat niet in openbare HAN-bronnen. Vraag het na bij je studieloopbaanbegeleider of zoek het op in de studiehandleiding op Brightspace.</li><li>LabArchives: een account met HAN-licentie voor dit elektronische labjournaal is verplicht voor Chemiestudenten. Je koopt de licentie via de HAN-webshop.</li></ul><p><b>4. Materialen en kosten (eerste jaar, indicatief volgens de HAN)</b></p><ul><li>Collegegeld: bereken via de HAN-collegegeldpagina (verschilt per persoon en jaar)</li><li>Laptop: € 500 tot € 1.000</li><li>Introductie: € 100</li><li>Boeken jaar 1: ongeveer € 400, plus maximaal € 50 voor de labkit</li><li>LabArchives-licentie: € 50</li><li>Stage: mogelijk reis- en verblijfkosten, afhankelijk van de stageplek</li></ul><p>Boeken: de boekenlijst “Chemie Jaar 1” staat op Studiewinkel.nl. Je kunt ook tweedehands kopen of lenen in de HAN-bibliotheek. Readers krijg je digitaal tijdens het jaar.</p><p>Laptop:</p><ul><li>Windows 10 of 11 heeft de voorkeur (advies: Windows 11, maximaal 14 inch, niet ouder dan 3 jaar), met een HDMI-aansluiting of adapter.</li><li>Chromebooks en tablets zijn niet geschikt.</li><li>Je gebruikt Microsoft 365 (gratis via de HAN) en maakt sommige toetsen digitaal op je eigen laptop (Bring Your Own Device).</li><li>Met een MacBook heb je voor minstens één Windows-only applicatie een Windows-omgeving nodig, op eigen kosten.</li><li>Kun je geen laptop aanschaffen, dan kun je voor toetsen een leenlaptop gebruiken.</li></ul><p>Rekenmachine: ik vond geen HAN-voorschrift voor een specifiek model voor Chemie. Vraag bij je eerste toetsen na welke rekenmachine is toegestaan.</p><p><b>5. Locatie en faciliteiten</b></p><ul><li>Gebouw: Laan van Scheut 2, 6525 EM Nijmegen, onderdeel van de HAN Campus bij station Nijmegen Heyendaal. Daar zijn broodjes en soep te koop. Voor een warme maaltijd of de pub ga je naar Kapittelweg 33 of 35.</li><li>CampusStore: Kapittelweg 33, ruimte D0.40 (readers, kantoorartikelen, labkit).</li><li>Bibliotheek: HAN Bibliotheek Nijmegen op Kapittelweg 33 (eerste en tweede verdieping). De balie is op werkdagen open van 08:30 tot 17:00, en op maandag, dinsdag en donderdag ook van 17:30 tot 20:00. Selfservice-uitleen en studiewerkplekken zijn toegankelijk zolang het gebouw open is. Lenen gaat met je HANcard; de standaardtermijn is 4 weken. In vakanties gelden andere openingstijden.</li></ul><p><b>6. Digitale omgeving</b></p><ul><li>HANaccount: inloggen op alle voorzieningen; activeren door je tijdelijke wachtwoord te wijzigen</li><li>HANmail / Microsoft 365: mail, agenda, Teams, Office</li><li>HAN Insite: intranet: regelingen, geldzaken, herinschrijven, jaarrooster, hulp</li><li>OSIRIS: cijfers en studiepunten, inschrijven voor tentamens, afspraken met begeleiders</li><li>MyX (My Xedule): lesrooster</li><li>Brightspace: lesvoorbereiding, opdrachten inleveren, feedback</li><li>LabArchives: elektronisch labjournaal (verplicht)</li><li>Wifi: via de geteduroam-app met je HANaccount</li><li>HANcard: nodig bij tentamens, printen, lenen en parkeren</li></ul><p>“Onderwijs Online Nijmegen” is geen HAN-systeem; de leeromgeving van de HAN is Brightspace.</p><p><b>7. Studiebegeleiding</b></p><ul><li>Studieloopbaanbegeleider (slb’er): je persoonlijke coach en eerste aanspreekpunt. Volgens de opleiding zie je elkaar in jaar 1 wekelijks; daarna bepaal je zelf hoeveel begeleiding je wilt. De slb’er geeft ook het PSA.</li><li>Studieadviseur: regelt zaken zoals speciale tentamenvoorzieningen of een aangepast studieplan bij bijzondere omstandigheden.</li><li>Student Support Center: studentendecanen, bijvoorbeeld bij een functiebeperking, ziekte, topsport of financiële vragen; studentenpsychologen, vertrouwenspersonen en coaches; trainingen en workshops, zoals plannen en omgaan met studiestress. Meer informatie staat op Insite.</li></ul><p>Speelt er iets dat je studievoortgang raakt, meld het dan vroeg. Bij bijzondere omstandigheden is vaak meer mogelijk dan je denkt.</p><p><b>8. Studie- en studentenverenigingen</b></p><p>SV ‘t Reactievat is de studievereniging van de Academie Toegepaste Biowetenschappen en Chemie (Chemie, Chemistry, BML, Bio-informatica, Life Sciences). De vereniging is gevestigd aan de Laan van Scheut 2, opgericht in 1992 en wordt door studenten gerund. Ze organiseert onder meer bijlessen, masterclasses, lezingen, bedrijfsbezoeken, studiereizen, borrels en de introductie.</p><p>Studentenverenigingen in Nijmegen: de HAN verwijst onder meer naar:</p><ul><li>gezelligheids-, levensbeschouwelijke en internationale verenigingen, zoals AEGEE-Nijmegen en ESN Nijmegen;</li><li>de koepel B.O.S.;</li><li>een lange lijst studentensportverenigingen.</li></ul><p>Studentenvakbond AKKU behartigt de belangen van HAN- en Radboud-studenten.</p><p><b>9. Beroepsperspectief en doorstuderen</b></p><p>Werkvelden: laboratoria in de levensmiddelenindustrie, (petro)chemie, polymeerindustrie, farmacie, ziekenhuizen en onderzoeksinstituten. De HAN noemt functies als chemisch-fysisch analist, chemicus in de polymeerindustrie, onderzoeker en organisch synthetisch chemicus.</p><p>Arbeidsmarkt: twee uitspraken van de HAN zijn wervingsteksten zonder bronvermelding: dat de vraag naar chemisch analisten groter is dan het aanbod, en dat een scheikundige gemiddeld € 3.000 bruto per maand verdient. Volgens Studiekeuze123 vond 84% van de afgestudeerden van HAN Chemie een baan binnen het vakgebied, en 81% een baan op het niveau van de studie.</p><p>Doorstuderen: de HAN noemt:</p><ul><li>de master Molecular Sciences aan de Radboud Universiteit;</li><li>de master Chemistry: Analytical Sciences aan de Universiteit van Amsterdam;</li><li>de eigen HAN-master Applied Molecular Sciences, track Chemistry (Engelstalig, 2 jaar, theorie gecombineerd met leren op een stageplek, ook in deeltijd).</li></ul><p>Voor universitaire masters is vaak een premaster of doorstroomminor nodig; plan dat in jaar 3. Wil je lesgeven, dan kun je via de kopopleiding Leraar Scheikunde in 1 jaar een tweedegraads bevoegdheid halen.</p><p><b>Recommendations</b></p><ul><li>Lees deze week het OS-OER 2026-2027 van Chemie (via “Praktische info” op de opleidingspagina). Noteer de doorstroomnorm, eventuele verplichte onderdelen en de aanwezigheidsregels voor practica. Nu, begin november, ligt het eerste blok achter je: check in OSIRIS hoeveel EC je hebt en of er onderdelen openstaan.</li><li>Behandel het PSA niet als vrijbrief. Het advies is niet bindend, maar zonder de doorstroomnorm kun je niet aan jaar 2 beginnen. Omdat punten per blok worden toegekend, kan één gemist onderdeel een heel blok blokkeren. Plan herkansingen direct.</li><li>Neem labveiligheid vanaf dag één serieus: labjas dicht, bril op, en de instructies uit het vak Veiligheid toepassen. Vraag bij twijfel je docent of er een verplichte veiligheidstoets of instructie is voor specifieke practica.</li><li>Zorg dat je laptop klaar is voor digitale toetsen, met Windows-software en Microsoft 365, en dat je LabArchives-account actief is.</li><li>Bouw vroeg je netwerk: word lid van ‘t Reactievat. Vind je analytische chemie leuk, overweeg dan een sollicitatie voor het ASTP voor de deadline in je propedeusejaar.</li><li>Zoek op tijd hulp: eerst bij je slb’er, daarna bij het Student Support Center.</li></ul><p><b>Caveats</b></p><ul><li>Veel informatie verandert per studiejaar: OS-OER, doorstroomnorm, vakkenlijst, kosten, ASTP-data en minoraanbod. Spreken bronnen elkaar tegen, dan gaat het OS-OER van jouw studiejaar voor op websites.</li><li>Ik kon de volledige tekst van het actuele OS-OER niet inzien. De cursuscodes, de EC per onderwijseenheid en de exacte doorstroomnorm voor 2026-2027 staan daarom niet in dit overzicht.</li><li>Ik vond geen actuele, openbare HAN-regeling over een verplichte labjas en bril, de inhoud van de labkit of een verplichte veiligheidstoets. De adviezen hierover zijn gebaseerd op een oudere HAN-flyer, de Arbocatalogus hbo en algemene labpraktijk.</li><li>De kosten zijn schattingen van de HAN zelf, geen vaste prijzen. Het collegegeld staat er bewust niet in, omdat het per persoon en jaar verschilt.</li><li>Cijfers van Studiekeuze123 (zoals de vermelding van een BSA) lopen soms achter op besluiten van de HAN.</li></ul></div></details><p class="nummer">2</p></div>
       <div class="chat"><p class="vraag">Wat moet een nieuwe student Chemie aan de HAN weten?</p><div class="antwoord"><p>Als nieuwe student van de opleiding Chemie aan de HAN zijn dit de belangrijkste zaken om te weten en te regelen.</p><p><b>Voor je start</b></p><p><b>1. Meld je op tijd aan</b></p></div><details><summary>Lees het hele antwoord</summary><div class="inhoud antwoord"><p>Als nieuwe student van de opleiding Chemie aan de HAN zijn dit de belangrijkste zaken om te weten en te regelen.</p><p><b>Voor je start</b></p><p><b>1. Meld je op tijd aan</b></p><ul><li>Aanmelden gaat via Studielink.</li><li>Het advies is om je uiterlijk 1 mei aan te melden.</li><li>Voor de opleiding Chemie geldt geen selectie of loting.</li></ul><p><b>2. Controleer of je toelaatbaar bent</b></p><p>Je bent rechtstreeks toelaatbaar met:</p><ul><li>een havo-, vwo- of mbo-4-diploma dat voldoet aan de profiel- en vakkenpakketeisen;</li><li>voor havo/vwo zijn meestal scheikunde en soms ook wiskunde vereist.</li></ul><p><b>3. Doe een matchingsactiviteit</b></p><p>De HAN biedt proefstudeerdagen en matching aan om te ontdekken of Chemie bij je past. Dit is niet verplicht, maar wel sterk aanbevolen.</p><p><b>Wat moet je regelen?</b></p><p>Vanaf mei</p><ul><li>Machtiging voor betaling van het collegegeld afgeven via Studielink.</li><li>Eventueel studiefinanciering aanvragen.</li></ul><p>Vanaf juni</p><ul><li>Studieboeken bestellen.</li><li>Controleren of je laptop geschikt is.</li><li>Een labkit aanschaffen voor practica.</li><li>Een licentie voor LabArchives (elektronisch labjournaal) regelen.</li></ul><p>Vanaf juli</p><ul><li>Controleren of je inschrijving definitief is.</li><li>Je HAN-account activeren.</li><li>Office 365 installeren.</li><li>Je HAN-mail gebruiken.</li><li>Wifi en andere HAN-systemen instellen.</li><li>Een pasfoto uploaden voor je HANcard.</li></ul><p><b>Laptopvereisten</b></p><p>De opleiding werkt intensief met digitale systemen.</p><p>Aanbevolen:</p><ul><li>Windows 11-laptop;</li><li>maximaal 14 inch;</li><li>niet ouder dan 3 jaar.</li></ul><p>Daarnaast:</p><ul><li>Microsoft 365 wordt actief gebruikt;</li><li>Chromebook of tablet is onvoldoende;</li><li>een HDMI-aansluiting (of adapter) is nodig;</li><li>Mac-gebruikers moeten rekening houden met software die alleen onder Windows werkt.</li></ul><p><b>Introductie en eerste lesdag</b></p><ul><li>De introductieweek vindt plaats van 24 t/m 28 augustus 2026.</li><li>Deelname is niet verplicht, maar wordt sterk aanbevolen.</li><li>Op 24 augustus ontvang je meestal je klasindeling en rooster.</li><li>De eerste lesdag is 1 september om 09:00 uur.</li></ul><p><b>Belangrijke systemen</b></p><p>Tijdens je studie gebruik je onder andere:</p><ul><li>HAN Insite: algemene informatie en regelzaken</li><li>Osiris: cijfers, tentamens en studievoortgang</li><li>MyX: rooster</li><li>Brightspace: onderwijsmateriaal en opdrachten</li><li>LabArchives: digitaal labjournaal</li></ul><p><b>Studiekosten eerste jaar</b></p><p>Reken ongeveer op:</p><ul><li>collegegeld;</li><li>boeken: circa €400;</li><li>labkit: maximaal €50;</li><li>LabArchives-licentie: circa €50;</li><li>introductie: ongeveer €100;</li><li>eventueel een laptop (€500-€1.000).</li></ul><p><b>Waar studeer je?</b></p><p>De opleiding Chemie is gevestigd op: Laan van Scheut 2, Nijmegen.</p><p><b>Mijn belangrijkste advies aan nieuwe studenten</b></p><ul><li>Meld je vóór 1 mei aan.</li><li>Doe een proefstudeerdag of matching.</li><li>Regel je HAN-account direct zodra je de gegevens ontvangt.</li><li>Zorg dat je laptop en software vóór de introductieweek werken.</li><li>Doe mee aan de introductie om snel medestudenten te leren kennen.</li><li>Word lid van studievereniging &#x27;t Reactievat voor sociale activiteiten, bijlessen en netwerkmogelijkheden.</li></ul><p>Bronnen: A1-inschrijvingsreglement-2026-2027-ATBC en A5-webpagina-praktische-info-chemie.</p></div></details><p class="nummer">3</p></div>
     </div>
-    <details>
-      <summary>Hoe zijn ze gemaakt? (pas openen na het gesprek)</summary>
-      <div class="inhoud">
-        <p><b>Wat je vraagt, welk model je gebruikt en wat je meegeeft.</b> Aan alle drie kun je draaien.</p>
+  </section>
+
+  <section class="onderdeel" id="s2-2">
+    <p class="badge"><span>Reader</span><b>2.2</b></p>
+    <h3 class="titel">Nu zelf, voor je eigen rol</h3>
+    <div class="duo">
+      <div class="kolom"><p class="tkop">Doe het</p><p>Nieuwe chat in je tool. Zet de documenten erbij. Vraag wat jij als docent wilt weten over de start van je studenten.</p></div>
+      <div class="kolom"><p class="tkop">Kijk ernaar</p><p>Vind je het goed? Wat zou je anders vragen? Mis je een document?</p></div>
+    </div>
+    <h4>De documenten</h4>
+    <ul class="docs">
+      <li><span><span class="code">A1</span>Inschrijvingsreglement 2026-2027 ATBC</span><a class="dl" href="documenten/A1-inschrijvingsreglement-2026-2027-ATBC.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
+      <li><span><span class="code">A5</span>Webpagina Praktische info Chemie</span><a class="dl" href="documenten/A5-webpagina-praktische-info-chemie.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
+      <li><span><span class="code">A6</span>Webpagina Dit is je studie Chemie</span><a class="dl" href="documenten/A6-webpagina-dit-is-je-studie-chemie.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
+    </ul>
+  </section>
+
+  <section class="onderdeel" id="s2-3">
+    <p class="badge"><span>Reader</span><b>2.3</b></p>
+    <h3 class="titel">Wat je vraagt, welk model je gebruikt en wat je meegeeft</h3>
+    <div class="tegels">
+      <div class="tegel"><img src="assets/icons/chat.webp" alt=""><p class="tkop">Prompt</p><p>Eén zin, of: voor wie, wat en hoe.</p></div>
+      <div class="tegel"><img src="assets/icons/decision.webp" alt=""><p class="tkop">Model</p><p>Gewone chat, of een diepere zoekfunctie.</p></div>
+      <div class="tegel"><img src="assets/icons/projects.webp" alt=""><p class="tkop">Context</p><p>Niets, het web, of jouw documenten.</p></div>
+    </div>
+    <p>Aan alle drie kun je draaien.</p>
+
+    <details class="fold" id="gevraagd">
+      <summary>Wat er bij elke uitkomst gevraagd was</summary>
+      <div class="fold-body">
         <ol class="stappen">
-          <li><div><b>Eén zin</b><span>In een gewone chat. De AI zocht zelf op het web.</span></div></li>
-          <li><div><b>Dezelfde zin, met een diepere zoekfunctie</b><span>Langer, maar niet uit onze documenten.</span></div></li>
-          <li><div><b>Dezelfde zin, met documenten en een instructie</b><span>Voor wie het is, wat hij moet doen, alleen uit deze documenten, kort met de bron erbij, en verzin niets.</span></div></li>
+          <li><div><b class="kop">Eén zin, in een gewone chat</b><p class="uitleg">De AI zocht zelf op het web.</p></div></li>
+          <li><div><b class="kop">Dezelfde zin, met een diepere zoekfunctie</b><p class="uitleg">Grondig en met bronnen, maar lang en van overal vandaan.</p></div></li>
+          <li><div><b class="kop">Onze documenten plus een korte uitleg</b><p class="uitleg">A1, A5 en A6 erbij, en een uitleg: voor wie, wat moet hij doen, alleen uit deze documenten, kort, met de bron, en verzin niets.</p></div></li>
         </ol>
-        <p>Elke chat is een nieuwe collega op dag één. Die weet niets van jullie, tot je hem de documenten geeft en uitlegt hoe jullie het doen.</p>
       </div>
     </details>
-  </div>
+
+    <h4>Licht of zwaar model</h4>
+    <p>Bij model kun je ook kiezen tussen een licht en een zwaar model. Een licht model is snel en prima voor een mail. Een zwaar model denkt langer na en is beter bij lastige vragen. In de gratis Copilot kies je dat niet zelf, in Claude en ChatGPT wel, in het menu bij het invoerveld.</p>
+
+    <div class="letop"><b>Elke chat is een nieuwe collega op dag één</b><p>Die weet niets van jullie, tot je hem de documenten geeft en uitlegt hoe jullie het doen. In ronde 1 schrijf je die uitleg één keer, en hij blijft staan.</p></div>
+  </section>
 </section>
 
-<section class="blok" id="bouwen">
-  <div class="wrap">
-    <p class="eyebrow">Je eigen starthulp voor studenten</p>
-    <h2>Bouw een hulp voor een nieuwe student</h2>
+<!-- ================= 3 RONDE 1 ================= -->
+<section class="hoofdstuk" id="s3">
+  <div class="hoofdstuk-kop"><span class="nr">3</span><h2>Ronde 1: bouw je starthulp</h2></div>
+  <p class="intro">Je bouwt een hulp voor een nieuwe student Chemie, op A1, A5 en A6. Tot 14:10.</p>
 
-    <h3>Schrijf je instructie: vijf vragen</h3>
-    <p>Beantwoord elke vraag in één of twee gewone zinnen. <b>De vragen zelf hoeven er niet in</b>, alleen jouw antwoorden.</p>
+  <section class="onderdeel" id="s3-1">
+    <p class="badge"><span>Reader</span><b>3.1</b></p>
+    <h3 class="titel">Schrijf je instructie: vijf vragen</h3>
     <ol class="stappen">
-      <li><div><b>Voor wie is hij?</b><span>Een nieuwe student Chemie, in de eerste week.</span></div></li>
-      <li><div><b>Wat moet hij doen?</b><span>Vragen beantwoorden over de start van de studie.</span></div></li>
-      <li><div><b>Waarmee?</b><span>Alleen deze documenten.</span></div></li>
-      <li><div><b>Hoe ziet het antwoord eruit?</b><span>Kort, in gewone taal, eerst het antwoord en dan het document waar het staat.</span></div></li>
-      <li><div><b>Staat het er niet in?</b><span>Zeg dat, en verzin niets.</span></div></li>
+      <li><div><b class="kop">Voor wie is hij?</b><p class="voorbeeld">Een nieuwe student Chemie, in de eerste week</p></div></li>
+      <li><div><b class="kop">Wat moet hij doen?</b><p class="voorbeeld">Vragen beantwoorden over de start van de studie</p></div></li>
+      <li><div><b class="kop">Waarmee?</b><p class="voorbeeld">Alleen deze documenten</p></div></li>
+      <li><div><b class="kop">Hoe ziet het antwoord eruit?</b><p class="voorbeeld">Kort, in gewone taal, eerst het antwoord en dan het document waar het staat</p></div></li>
+      <li><div><b class="kop">Staat het er niet in?</b><p class="voorbeeld">Zeg dat, en verzin niets</p></div></li>
+    </ol>
+    <p>Beantwoord elke vraag in één of twee gewone zinnen. <b>De vragen zelf hoeven er niet in.</b></p>
+  </section>
+
+  <section class="onderdeel" id="s3-2">
+    <p class="badge"><span>Reader</span><b>3.2</b></p>
+    <h3 class="titel">Zo kan een instructie klinken</h3>
+    <p class="lead">Voorbeeld: een hulp voor feedback op labverslagen. Elke alinea beantwoordt een van de vijf vragen.</p>
+    <div class="instructie">
+      <div class="doc-kop"><p>Word-document: instructie feedback labverslag</p><button class="copy-btn" type="button">Kopieer</button></div>
+      <ol>
+        <li><span class="n">1</span><div><p class="tekst">Je helpt eerstejaars Chemie die hun eerste labverslag schrijven. Ze zijn net begonnen en hebben nog weinig ervaring met wetenschappelijk schrijven.</p><p class="vraagt">Voor wie?</p></div></li>
+        <li><span class="n">2</span><div><p class="tekst">Je geeft feedback op hun verslag, zodat ze het zelf kunnen verbeteren. Je herschrijft het verslag niet en je geeft geen cijfer.</p><p class="vraagt">Wat moet hij doen?</p></div></li>
+        <li><span class="n">3</span><div><p class="tekst">Gebruik alleen de beoordelingscriteria en de schrijfwijzer voor labverslagen in dit notebook.</p><p class="vraagt">Waarmee?</p></div></li>
+        <li><span class="n">4</span><div><p class="tekst">Begin met wat goed gaat. Geef daarna maximaal vijf punten: wat beter kan, bij welk criterium het hoort, en een voorbeeldzin. Kort, in gewone taal.</p><p class="vraagt">Hoe ziet het antwoord eruit?</p></div></li>
+        <li><span class="n">5</span><div><p class="tekst">Staat iets niet in de criteria of de schrijfwijzer, zeg dat. Verzin geen eisen.</p><p class="vraagt">Staat het er niet in?</p></div></li>
+      </ol>
+<pre data-bron hidden>Je helpt eerstejaars Chemie die hun eerste labverslag schrijven. Ze zijn net begonnen en hebben nog weinig ervaring met wetenschappelijk schrijven.
+
+Je geeft feedback op hun verslag, zodat ze het zelf kunnen verbeteren. Je herschrijft het verslag niet en je geeft geen cijfer.
+
+Gebruik alleen de beoordelingscriteria en de schrijfwijzer voor labverslagen in dit notebook.
+
+Begin met wat goed gaat. Geef daarna maximaal vijf punten: wat beter kan, bij welk criterium het hoort, en een voorbeeldzin. Kort, in gewone taal.
+
+Staat iets niet in de criteria of de schrijfwijzer, zeg dat. Verzin geen eisen.</pre>
+    </div>
+    <p><b>Een andere hulp dan die van jou. Schrijf nu je eigen versie, voor je starthulp.</b></p>
+  </section>
+
+  <section class="onderdeel" id="s3-3">
+    <p class="badge"><span>Reader</span><b>3.3</b></p>
+    <h3 class="titel">Zo bouw je hem in Copilot</h3>
+    <ol class="stappen">
+      <li><div><b class="kop">Schrijf je instructie</b><p class="uitleg">De vijf vragen, in gewone zinnen. In Word, opslaan als <b>instructie starthulp</b>.</p></div></li>
+      <li><div><b class="kop">Maak een notebook</b><p class="uitleg">In Copilot. Andere tool? Kijk bij <a href="#s3-4">3.4</a>.</p></div></li>
+      <li><div><b class="kop">Zet alles erin</b><p class="uitleg">A1, A5 en A6, en je instructie.</p></div></li>
+      <li><div><b class="kop">Test met een roze post-it</b><p class="uitleg">Staat het antwoord in de documenten?</p></div></li>
+    </ol>
+    <div class="prompt"><p class="label">Eerste bericht</p><button class="copy-btn" type="button">Kopieer</button><pre>Volg de instructie in het document instructie starthulp. Bevestig in één zin dat je klaar bent.</pre></div>
+
+    <h4>Zo maak je een notebook in Copilot</h4>
+    <p class="shot-tip">Klik op een plaatje om het groot te zien.</p>
+    <ol class="stappen">
+      <li><div><b class="kop">Klik op Notebooks</b><p class="uitleg">Links in het menu van Copilot.</p><a class="shot-link" href="assets/screens/copilot-1-notebooks.png"><img class="shot" src="assets/screens/copilot-1-notebooks.png" alt="Het menu van Copilot met Notebooks onderaan" width="266" loading="lazy"></a></div></li>
+      <li><div><b class="kop">Geef het een naam</b><p class="uitleg">Bijvoorbeeld <b>Starthulp Chemie</b>. Klik op Volgende.</p><a class="shot-link" href="assets/screens/copilot-2-naam.png"><img class="shot" src="assets/screens/copilot-2-naam.png" alt="Het venster Laten we je notitieblok maken, met het veld Notebooknaam en de knop Volgende" width="615" loading="lazy"></a></div></li>
+      <li><div><b class="kop">Upload je bestanden</b><p class="uitleg">Klik op het pijltje omhoog. Kies A1, A5, A6 en <b>instructie starthulp</b>.</p><a class="shot-link" href="assets/screens/copilot-3-uploaden.png"><img class="shot" src="assets/screens/copilot-3-uploaden.png" alt="Het venster Aan notebook toevoegen, met rechts het pijltje omhoog voor Bestanden uploaden" width="627" loading="lazy"></a></div></li>
     </ol>
 
-    <h3>Zo kan een instructie klinken</h3>
-    <p>Een voorbeeld voor een andere hulp: feedback op labverslagen. Zo ziet het eruit in je document. De vragen staan er niet in.</p>
-    <div class="prompt"><button type="button" data-kopieer>Kopieer</button><pre>Je helpt eerstejaars Chemie die hun eerste labverslag schrijven.
-
-Je geeft feedback op hun verslag, zodat ze het zelf kunnen verbeteren. Je herschrijft het verslag niet.
-
-Gebruik alleen de beoordelingscriteria en de schrijfwijzer voor labverslagen.
-
-Per punt: wat beter kan, bij welk criterium, en een voorbeeldzin. Kort, in gewone taal.
-
-Staat iets niet in de criteria, zeg dat. Verzin geen eisen.</pre></div>
-    <p>Schrijf nu je eigen antwoorden, voor een hulp die een nieuwe student inwerkt.</p>
-
-    <h3>Zo bouw je hem</h3>
-    <ol class="stappen">
-      <li><div><b>Maak een notebook of project</b><span>In Copilot een notebook. Andere tool: kijk bij de spiekregel.</span></div></li>
-      <li><div><b>Zet de documenten erin</b><span>A1, A5 en A6, hieronder te downloaden.</span></div></li>
-      <li><div><b>Schrijf je instructie en zet hem erbij</b><span>In Copilot als Word-document, opgeslagen als "instructie starthulp". Schrijf zelf eerst. Pas na vijf minuten vast? Open de startinstructie hieronder.</span></div></li>
-    </ol>
-    <p>Eerste bericht in je Copilot-notebook:</p>
-    <div class="prompt"><button type="button" data-kopieer>Kopieer</button><pre>Volg de instructie in het document instructie starthulp. Bevestig in één zin dat je klaar bent.</pre></div>
-
-    <h3>De documenten</h3>
+    <h4>De documenten</h4>
     <ul class="docs">
-      <li><span><span class="code">A1</span>Inschrijvingsreglement 2026-2027 ATBC</span><a class="dl" href="documenten/A1-inschrijvingsreglement-2026-2027-ATBC.pdf" download>PDF</a></li>
-      <li><span><span class="code">A5</span>Webpagina Praktische info Chemie</span><a class="dl" href="documenten/A5-webpagina-praktische-info-chemie.pdf" download>PDF</a></li>
-      <li><span><span class="code">A6</span>Webpagina Dit is je studie Chemie</span><a class="dl" href="documenten/A6-webpagina-dit-is-je-studie-chemie.pdf" download>PDF</a></li>
+      <li><span><span class="code">A1</span>Inschrijvingsreglement 2026-2027 ATBC</span><a class="dl" href="documenten/A1-inschrijvingsreglement-2026-2027-ATBC.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
+      <li><span><span class="code">A5</span>Webpagina Praktische info Chemie</span><a class="dl" href="documenten/A5-webpagina-praktische-info-chemie.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
+      <li><span><span class="code">A6</span>Webpagina Dit is je studie Chemie</span><a class="dl" href="documenten/A6-webpagina-dit-is-je-studie-chemie.pdf" download><img src="assets/icons/download.webp" alt="">PDF</a></li>
     </ul>
-    <p>Eigen documenten mogen ook, zolang er geen studentgegevens in staan.</p>
 
-    <details>
-      <summary>Startinstructie (pas als je vastzit)</summary>
-      <div class="inhoud">
-        <p>Vergelijk hem straks met je eigen instructie: wat heb jij dat hier niet in staat, en andersom?</p>
-        <div class="prompt"><button type="button" data-kopieer>Kopieer</button><pre>Je helpt nieuwe studenten die net met de opleiding Chemie aan de HAN starten.
+    <details class="fold" id="startinstructie">
+      <summary>Na vijf minuten vast?</summary>
+      <div class="fold-body">
+        <p>Schrijf zelf eerst. Zit je na vijf minuten vast, gebruik dan deze startinstructie. Vergelijk hem straks met je eigen versie: wat heb jij dat hier niet in staat, en andersom?</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je helpt nieuwe studenten die net met de opleiding Chemie aan de HAN starten.
 
 Wat je doet: je beantwoordt hun vragen over aanmelden, de start van het studiejaar en hoe de opleiding in elkaar zit, zoals een ervaren ouderejaars dat zou doen.
 
@@ -184,107 +301,214 @@ Bevestig in één zin dat je klaar bent. Wacht dan op de eerste vraag.</pre></di
       </div>
     </details>
 
-    <h3>Testen en verbeteren: rondje na rondje</h3>
+    <p class="klein">Lukt een notebook niet? Open een gewone chat en plak je instructie als eerste bericht. Lukt uploaden niet? Kopieer de tekst uit A5 en A6 en plak die erbij.</p>
+  </section>
+
+  <section class="onderdeel" id="s3-4">
+    <p class="badge"><span>Reader</span><b>3.4</b></p>
+    <h3 class="titel">Andere tools</h3>
+    <p class="lead">Werk je in ChatGPT, Claude of Gemini? Daar heet het een project of een notebook, met een eigen vak voor je instructie. Je hoeft je instructie dus niet als Word-document toe te voegen.</p>
+
+    <details class="fold" id="chatgpt">
+      <summary>ChatGPT</summary>
+      <div class="fold-body">
+        <ol class="stappen">
+          <li><div><b class="kop">Maak een project</b><p class="uitleg">Klik links in het menu bij <b>Projecten</b> op nieuw project en geef het een naam.</p><a class="shot-link" href="assets/screens/chatgpt-1-projecten.png"><img class="shot" src="assets/screens/chatgpt-1-projecten.png" alt="Het menu van ChatGPT met Projecten en een project" width="284" loading="lazy"></a></div></li>
+          <li><div><b class="kop">Zet je instructie bij Aanwijzingen</b><p class="uitleg">Open de instellingen van het project en plak je instructie in het veld <b>Aanwijzingen</b>.</p><a class="shot-link" href="assets/screens/chatgpt-2-instellingen.png"><img class="shot" src="assets/screens/chatgpt-2-instellingen.png" alt="Projectinstellingen in ChatGPT met de velden Projectnaam, Aanwijzingen en Geheugen" width="511" loading="lazy"></a></div></li>
+          <li><div><b class="kop">Voeg je bestanden toe</b><p class="uitleg">Zet A1, A5 en A6 in het project.</p></div></li>
+        </ol>
+        <p class="klein"><b>Tip:</b> staat bij Geheugen de keuze voor alleen dit project? Zet hem daarop. Anders kunnen herinneringen uit andere chats meesturen.</p>
+      </div>
+    </details>
+
+    <details class="fold" id="claude">
+      <summary>Claude</summary>
+      <div class="fold-body">
+        <ol class="stappen">
+          <li><div><b class="kop">Maak een project</b><p class="uitleg">Klik links op <b>Projecten</b> en daarna op <b>Project aanmaken</b>.</p></div></li>
+          <li><div><b class="kop">Zet je instructie bij Instructies</b><p class="uitleg">Plak je instructie in het vak <b>Instructies</b> van het project.</p></div></li>
+          <li><div><b class="kop">Voeg je documenten toe bij Context</b><p class="uitleg">Zet A1, A5 en A6 bij <b>Context</b>.</p></div></li>
+        </ol>
+        <p class="nog-geen">Voor Claude zijn er nog geen screenshots.</p>
+      </div>
+    </details>
+
+    <details class="fold" id="gemini">
+      <summary>Gemini</summary>
+      <div class="fold-body">
+        <p class="klein"><b>Let op:</b> Gemini staat in het Engels.</p>
+        <ol class="stappen">
+          <li><div><b class="kop">Maak een notebook</b><p class="uitleg">Klik links onder Notebooks op <b>New notebook</b>.</p><a class="shot-link" href="assets/screens/gemini-1-notebook.png"><img class="shot" src="assets/screens/gemini-1-notebook.png" alt="Het menu van Gemini met onderaan New notebook" width="289" loading="lazy"></a></div></li>
+          <li><div><b class="kop">Zet je instructie bij Instructions</b><p class="uitleg">Open <b>Notebook settings</b> en plak je instructie onder <b>Instructions</b>. Klik op Save.</p><a class="shot-link" href="assets/screens/gemini-2-instructies.png"><img class="shot" src="assets/screens/gemini-2-instructies.png" alt="Notebook settings in Gemini met het veld Instructions" width="507" loading="lazy"></a></div></li>
+          <li><div><b class="kop">Voeg je bestanden toe bij Sources</b><p class="uitleg">Klik bij <b>Sources</b> op <b>Upload files</b> en kies A1, A5 en A6.</p><a class="shot-link" href="assets/screens/gemini-3-bronnen.png"><img class="shot" src="assets/screens/gemini-3-bronnen.png" alt="Het venster Sources in Gemini met de knop Upload files" width="871" loading="lazy"></a></div></li>
+        </ol>
+      </div>
+    </details>
+
+    <p><b>Lukt het niet binnen vijf minuten? Stap over op Copilot.</b></p>
+  </section>
+
+  <section class="onderdeel" id="s3-5">
+    <p class="badge"><span>Reader</span><b>3.5</b></p>
+    <h3 class="titel">Drie tips</h3>
     <ol class="stappen">
-      <li><div><b>Vraag</b><span>Stel je starthulp een vraag.</span></div></li>
-      <li><div><b>Check</b><span>Zoek het antwoord op. Klopt het? "Klopt" telt alleen als je de plek kunt aanwijzen.</span></div></li>
-      <li><div><b>Pas aan</b><span>Eén ding in je instructie of je documenten. Eén ding tegelijk, anders weet je niet wat werkte.</span></div></li>
-      <li><div><b>Opnieuw</b><span>Stel dezelfde vraag nog een keer. En dan het volgende rondje.</span></div></li>
+      <li><div><b class="kop">Praat in plaats van typen</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>H</kbd></div><p class="uitleg">Klik in het invoerveld, druk de toetsen in en praat.</p></div></li>
+      <li><div><b class="kop">Vast? Maak een screenshot</b><div class="toetsen"><kbd>Windows</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></div><p class="uitleg">Plak hem in de chat en vraag: ik ben hier, wat moet ik doen?</p></div></li>
+      <li><div><b class="kop">Geen idee wat je moet vragen?</b><p class="uitleg">Laat de AI eerst drie vragen aan jou stellen. Kopieer deze prompt naar een nieuwe chat.</p></div></li>
     </ol>
-    <p><b>Net bezig?</b> Twee vragen die er volgens jou in staan, en één waarvan je denkt dat het er niet in staat. <b>Al verder?</b> Lastige vragen, twee documenten die iets anders zeggen, of je uitdaging. Schrijf op waar je tegenaan liep: dat delen we na de pauze.</p>
-    <p>Testvragen om mee te starten:</p>
+    <div class="prompt" id="drie-vragen"><p class="label">Laat de AI eerst vragen stellen</p><button class="copy-btn" type="button">Kopieer</button><pre>Ik wil AI gebruiken voor een taak in mijn werk als docent, maar ik weet nog niet goed wat ik moet vragen.
+
+Stel me eerst drie vragen, één voor één. Wacht na elke vraag op mijn antwoord. Vraag naar:
+1. wat ik wil maken of laten doen;
+2. voor wie het is;
+3. welke informatie of documenten ik heb.
+
+Schrijf daarna een instructie die ik in een nieuwe chat kan plakken.</pre></div>
+  </section>
+</section>
+
+<!-- ================= 4 RONDE 2 ================= -->
+<section class="hoofdstuk" id="s4">
+  <div class="hoofdstuk-kop"><span class="nr">4</span><h2>Ronde 2: beter maken</h2></div>
+  <p class="intro">Tot 14:32. Pak er een roze post-it van een collega bij.</p>
+
+  <section class="onderdeel" id="s4-1">
+    <p class="badge"><span>Reader</span><b>4.1</b></p>
+    <h3 class="titel">Rondje na rondje beter</h3>
+    <div class="rondje">
+      <div><p class="n">01</p><p class="tkop">Vraag</p><p>Stel een vraag.</p></div>
+      <div><p class="n">02</p><p class="tkop">Check</p><p>Zoek het op. Klopt het? Wijs de plek aan.</p></div>
+      <div><p class="n">03</p><p class="tkop">Pas aan</p><p>Eén ding in je instructie of je documenten.</p></div>
+      <div><p class="n">04</p><p class="tkop">Opnieuw</p><p>Stel dezelfde vraag nog een keer.</p></div>
+    </div>
+    <p><b>Eén ding tegelijk</b>, anders weet je niet wat werkte. En klopt telt alleen als je de plek kunt aanwijzen.</p>
+
+    <div class="duo">
+      <div class="kolom"><p class="tkop">Net bezig?</p><p>Twee vragen die erin staan, één die er niet in staat.</p></div>
+      <div class="kolom"><p class="tkop">Al verder?</p><p>Lastige vragen, twee documenten die iets anders zeggen, of je <a href="#s4-2">uitdaging</a>.</p></div>
+    </div>
+
+    <h4>Testvragen om mee te starten</h4>
     <ul class="docs">
       <li><span>Wat moet ik regelen voor het lab?</span></li>
       <li><span>Hoeveel studiepunten heb ik nodig voor een positief studieadvies?</span></li>
       <li><span>Mag ik me na uitschrijving opnieuw inschrijven?</span></li>
       <li><span>Wat kost een labjas?</span></li>
     </ul>
-    <p>Aanpassen in Copilot: haal de oude versie van je instructie uit het notebook, zet de nieuwe erin en stel dezelfde vraag opnieuw.</p>
+    <p><b>Aanpassen in Copilot:</b> haal de oude versie van je instructie uit het notebook, zet de nieuwe erin en stel dezelfde vraag opnieuw.</p>
 
-    <details>
+    <details class="fold" id="snel-klaar">
       <summary>Snel klaar? Drie dingen om te proberen</summary>
-      <div class="inhoud">
+      <div class="fold-body">
         <ol class="stappen">
-          <li><div><b>Vergelijk</b><span>Leg je eigen instructie naast de startinstructie. Wat heb jij dat hier niet in staat, en andersom?</span></div></li>
-          <li><div><b>Twee bronnen die botsen</b><span>Zet ook <a href="documenten/A2-mail-nieuwe-studenten-chemie-2023.pdf" download>A2 (mail aan nieuwe studenten, 2023)</a> erbij en vraag "Wanneer zijn de introdagen?". Welke klopt, en hoe weet je dat?</span></div></li>
-          <li><div><b>Een voorbeeld</b><span>Geef je starthulp één voorbeeld van een goed antwoord.</span></div></li>
+          <li><div><b class="kop">Vergelijk</b><p class="uitleg">Leg je eigen instructie naast de startinstructie bij <a href="#startinstructie">3.3</a>. Wat heb jij dat daar niet in staat, en andersom?</p></div></li>
+          <li><div><b class="kop">Twee bronnen die botsen</b><p class="uitleg">Zet ook <a href="documenten/A2-mail-nieuwe-studenten-chemie-2023.pdf" download>A2 (mail aan nieuwe studenten, 2023)</a> erbij en vraag: wanneer zijn de introdagen? Welke klopt, en hoe weet je dat?</p></div></li>
+          <li><div><b class="kop">Een voorbeeld</b><p class="uitleg">Geef je starthulp één voorbeeld van een goed antwoord.</p></div></li>
         </ol>
       </div>
     </details>
-  </div>
-</section>
+  </section>
 
-<section class="blok" id="uitdaging">
-  <div class="wrap">
-    <p class="eyebrow">Voor wie al zelf bouwt</p>
-    <h2>Zelfde documenten, tien stappen verder</h2>
-    <p class="lead">De rest bouwt een starthulp voor een nieuwe student. Wat maak jij van A1, A5 en A6?</p>
-    <div class="kaarten">
-      <div class="kaart"><img src="assets/icons/projects.webp" alt=""><h3>Jij kiest</h3><p>Een website, een app, flitskaarten, een quiz, een presentatie, een animatie.</p></div>
-      <div class="kaart"><img src="assets/icons/decision.webp" alt=""><h3>Eigen tool</h3><p>Werk waarin je wilt. Geen studentgegevens.</p></div>
-      <div class="kaart"><img src="assets/icons/chat.webp" alt=""><h3>Na de pauze laat je het zien</h3><p>Drie minuten: wat maakte je, waarmee, en waar liep je vast. Half af mag. Dat is ook een verhaal.</p></div>
+  <section class="onderdeel" id="s4-2">
+    <p class="badge"><span>Reader</span><b>4.2</b></p>
+    <h3 class="titel">Zelfde documenten, tien stappen verder</h3>
+    <p class="lead">Voor wie al zelf bouwt. De rest bouwt een starthulp voor een nieuwe student. Wat maak jij van A1, A5 en A6?</p>
+    <div class="tegels">
+      <div class="tegel"><img src="assets/icons/projects.webp" alt=""><p class="tkop">Jij kiest</p><p>Een website, een app, flitskaarten, een quiz, een presentatie, een animatie.</p></div>
+      <div class="tegel"><img src="assets/icons/decision.webp" alt=""><p class="tkop">Eigen tool</p><p>Werk waarin je wilt. Geen studentgegevens.</p></div>
+      <div class="tegel"><img src="assets/icons/chat.webp" alt=""><p class="tkop">Na de pauze laat je het zien</p><p>Twee minuten: wat maakte je, waarmee, en waar liep je vast. Half af mag. Dat is ook een verhaal.</p></div>
     </div>
-  </div>
+  </section>
 </section>
 
-<section class="blok" id="eigen-werk">
-  <div class="wrap">
-    <p class="eyebrow">Je eigen werk</p>
-    <h2>Jij bent de manager van je taken</h2>
+<!-- ================= 5 INSPIRATIE ================= -->
+<section class="hoofdstuk" id="s5">
+  <div class="hoofdstuk-kop"><span class="nr">5</span><h2>Inspiratie</h2></div>
+  <p class="intro">Wat kan er nog meer? De bouwers laten zien wat ze van dezelfde documenten maakten, en een collega laat zien wat hij of zij al bouwt voor het eigen werk.</p>
+
+  <section class="onderdeel" id="s5-1">
+    <p class="badge"><span>Reader</span><b>5.1</b></p>
+    <h3 class="titel">Breng de AI naar je informatie</h3>
+    <div class="duo">
+      <div class="kolom">
+        <p class="tkop">Zo gaat het nu</p>
+        <h4>Jij brengt je informatie naar de AI</h4>
+        <ul class="stroom"><li>Zoeken</li><li class="pijl">&#8594;</li><li>Openen</li><li class="pijl">&#8594;</li><li>Kopiëren</li><li class="pijl">&#8594;</li><li>Plakken</li></ul>
+        <p>En bij elke vraag opnieuw.</p>
+      </div>
+      <div class="kolom donker">
+        <p class="tkop">Omgedraaid</p>
+        <h4>Je brengt de AI naar je informatie</h4>
+        <ul class="stroom"><li>Jij wijst aan</li><li class="pijl">&#8594;</li><li>AI leest zelf</li></ul>
+        <p>Zoals je net deed in je notebook.</p>
+      </div>
+    </div>
+    <div class="letop"><b>Let op</b><p>Wat de AI leest, gaat naar de server van de aanbieder. Wijs dus alleen documenten aan zonder studentgegevens.</p></div>
+  </section>
+</section>
+
+<!-- ================= 6 RONDE 3 ================= -->
+<section class="hoofdstuk" id="s6">
+  <div class="hoofdstuk-kop"><span class="nr">6</span><h2>Ronde 3: je eigen werk</h2></div>
+
+  <section class="onderdeel" id="s6-1">
+    <p class="badge"><span>Reader</span><b>6.1</b></p>
+    <h3 class="titel">Jij bent de manager van je taken</h3>
     <ol class="stappen">
-      <li><div><b>Wat doe je van begin tot eind?</b></div></li>
-      <li><div><b>Welk stuk komt steeds terug en kost tijd?</b><span>Dat stuk geef je aan AI.</span></div></li>
-      <li><div><b>Hoe controleer jij wat eruit komt?</b><span>Daarna ben jij weer aan zet.</span></div></li>
+      <li><div><b class="kop">Wat doe je van begin tot eind?</b></div></li>
+      <li><div><b class="kop">Welk stuk geef je aan AI?</b></div></li>
+      <li><div><b class="kop">Hoe controleer jij wat eruit komt?</b></div></li>
     </ol>
+    <div class="kolom"><p class="tkop">Post-it</p><p>Schrijf je taak op een post-it en plak hem op de muur. Zie je dezelfde taak? Ga naast die collega zitten.</p></div>
+    <p style="margin-top:16px">Weet je niet hoe je je taak moet uitleggen? Gebruik <a href="#drie-vragen">de prompt bij 3.5</a>: de AI stelt jou eerst drie vragen.</p>
+  </section>
 
-    <h3>Maak het voor je eigen werk</h3>
-    <p>Kies één taak en ga naast iemand zitten die hetzelfde werk heeft.</p>
+  <section class="onderdeel" id="s6-2">
+    <p class="badge"><span>Reader</span><b>6.2</b></p>
+    <h3 class="titel">Maak het voor je eigen werk</h3>
     <ol class="stappen">
-      <li><div><b>Kopieer je instructie van vandaag</b></div></li>
-      <li><div><b>Herschrijf de vijf ingrediënten voor jouw taak</b><span>Voor wie, wat, waarmee, hoe ziet het antwoord eruit, en wat als het er niet in staat.</span></div></li>
-      <li><div><b>Zet er één eigen document bij</b><span>De handleiding, de rubric, je eigen uitleg. Geen document bij de hand? Schrijf de kennis in de instructie zelf.</span></div></li>
-      <li><div><b>Test één vraag</b><span>Af is: één vraag met een antwoord waar je iets mee kunt.</span></div></li>
+      <li><div><b class="kop">Nieuw notebook</b><p class="uitleg">Voor je eigen taak, met een eigen naam.</p></div></li>
+      <li><div><b class="kop">Schrijf je instructie</b><p class="uitleg">Dezelfde vijf vragen, nu voor jouw taak. Begin met een kopie van je starthulp.</p></div></li>
+      <li><div><b class="kop">Eén eigen document</b><p class="uitleg">Bijvoorbeeld een handleiding of beoordelingscriteria. Geen document? Zet de kennis in je instructie.</p></div></li>
+      <li><div><b class="kop">Test in rondjes</b><p class="uitleg">Vraag, check, pas aan, opnieuw.</p></div></li>
     </ol>
-    <div class="letop"><b>Geen studentgegevens</b><p>Dus geen mails van studenten, ingeleverd werk of cijferlijsten. Het hoeft ook geen bot te zijn: een hulp voor feedback op een verslag of voor een lesopzet werkt net zo.</p></div>
-
-    <h3>Breng de AI naar je informatie</h3>
-    <p>De gewone manier: zoeken, openen, kopiëren, plakken, bij elke vraag opnieuw. Draai het om: jij wijst de documenten aan, de AI leest zelf. Dat deed je vandaag in je notebook. Let op: alles wat de AI opent, gaat naar de aanbieder. Daarom kies je zelf wat erin gaat.</p>
-  </div>
+    <div class="af"><b>Af is</b><p>Eén vraag met een antwoord waar je iets mee kunt.</p></div>
+  </section>
 </section>
 
-<section class="blok oproep" id="kaartje">
-  <div class="wrap">
-    <p class="eyebrow" style="color:var(--han-wit)">Tot slot</p>
-    <h2>Mijn volgende stap</h2>
-    <p class="lead" style="color:var(--han-wit)">Wat maak je af, met welke collega, en wanneer? Vul het kaartje in en zet het meteen in je agenda.</p>
-    <p><a class="knop" href="kaartje.html">Open het kaartje</a></p>
-  </div>
+<!-- ================= 7 AFSLUITEN ================= -->
+<section class="hoofdstuk" id="s7">
+  <div class="hoofdstuk-kop"><span class="nr">7</span><h2>Afsluiten</h2></div>
+
+  <section class="onderdeel" id="s7-1">
+    <p class="badge"><span>Reader</span><b>7.1</b></p>
+    <h3 class="titel">Na vandaag</h3>
+    <p>Deze reader blijft staan, met alles van vandaag. Je notebook ook: open het in je tool en ga verder waar je was.</p>
+    <p>Vragen? Mail <a href="mailto:guus.witjes@han.nl">guus.witjes@han.nl</a>.</p>
+  </section>
+
+  <section class="onderdeel" id="s7-2">
+    <p class="badge"><span>Reader</span><b>7.2</b></p>
+    <h3 class="titel">Mijn volgende stap</h3>
+    <div class="oproep">
+      <p class="tkop">Wat maak ik af? Met welke collega? Wanneer?</p>
+      <p>Een datum, niet "binnenkort". Vul het kaartje in, kopieer het naar je mail of zet het meteen in je agenda.</p>
+      <p><a class="knop" href="kaartje.html">Open het kaartje</a></p>
+    </div>
+  </section>
 </section>
 
-</main>
+</div>
 
 <footer>
-  <div class="wrap">
-    <p>Studiemiddag AI voor het docententeam Chemie (ATBC), HAN, 4 november 2026.</p>
-    <p>Elke chat is een nieuwe collega. Jij bent de manager van je taken. Breng de AI naar je informatie.</p>
-    <p>Vragen: <a href="mailto:guus.witjes@han.nl">guus.witjes@han.nl</a></p>
-  </div>
+  <p>Studiemiddag AI voor het docententeam Chemie (ATBC), HAN, 4 november 2026.</p>
+  <p>Elke chat is een nieuwe collega. Jij bent de manager van je taken. Breng de AI naar je informatie.</p>
+  <p>Vragen: <a href="mailto:guus.witjes@han.nl">guus.witjes@han.nl</a></p>
 </footer>
 
-<script>
-document.querySelectorAll('[data-kopieer]').forEach(function (knop) {
-  knop.addEventListener('click', function () {
-    var tekst = knop.parentElement.querySelector('pre').innerText;
-    var klaar = function () { knop.textContent = 'Gekopieerd'; setTimeout(function () { knop.textContent = 'Kopieer'; }, 1800); };
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(tekst).then(klaar, function () { kopieerOud(tekst); klaar(); });
-    } else { kopieerOud(tekst); klaar(); }
-  });
-});
-function kopieerOud(tekst) {
-  var t = document.createElement('textarea'); t.value = tekst; document.body.appendChild(t);
-  t.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(t);
-}
-</script>
+</main>
+</div>
+
+<script src="assets/reader.js"></script>
 </body>
 </html>
