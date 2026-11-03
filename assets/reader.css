@@ -196,6 +196,8 @@ ol.stappen .voorbeeld { color: var(--fg-subtle); font-size: 15px; margin: 4px 0 
 .knop:hover, .copy-btn:hover { background: var(--accent-hover); color: var(--han-wit); }
 .knop:active, .copy-btn:active { background: var(--accent-press); }
 .copy-btn.done { background: var(--han-zwart); }
+.knop.wit { background: var(--han-wit); color: var(--han-rood); }
+.knop.wit:hover { background: var(--bg-alt); color: var(--han-rood); }
 .knop.licht { background: var(--han-wit); color: var(--fg); border: var(--border-bold); }
 .knop.licht:hover { background: var(--bg-alt); color: var(--fg); }
 .prompt .copy-btn { position: absolute; top: 12px; right: 12px; }
