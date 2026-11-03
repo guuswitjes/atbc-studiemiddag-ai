@@ -210,6 +210,7 @@ details.fold summary::-webkit-details-marker, .chat details summary::-webkit-det
 details.fold summary::after, .chat details summary::after { content: "+"; flex: none; color: var(--han-rood); font-size: 22px; line-height: 1; }
 details.fold[open] summary::after, .chat details[open] summary::after { content: "\2212"; }
 details.fold .fold-body { padding: 0 20px 20px; }
+details.fold summary .hint { display: block; font-family: var(--font-body); font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--fg-subtle); margin-left: auto; text-align: right; }
 details.fold .fold-body > :last-child { margin-bottom: 0; }
 
 /* ---------- Screenshots ---------- */
